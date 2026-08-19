@@ -75,7 +75,8 @@
     <p><b>Não compare entre países.</b> Cada um mede diferente: Grécia/Espanha-ilhas = <b>pax de aeroporto</b>; Alemanha/Portugal = <b>pernoites</b>; Itália = presenze; Japão = taxa-de-visita estimada; Canadá = <b>total com doméstico</b>; EUA (série NTTO) = <b>internacional que exclui Canadá/México</b> (subestima San Diego/Seattle). Os badges dizem qual é qual. Ordene DENTRO de cada país.</p>
     <p><b>A alavanca nova — inglês como destino.</b> EUA, Reino Unido, Irlanda e Austrália recebem o maior fluxo receptivo do mundo, comprado pelos NÃO-anglófonos. Um curso "survival English" reusa todas as línguas-comprador já construídas. <b>Montréal e Québec são francófonas</b> → entram no curso de francês, que já está no ar (expande o alcance dele ao Canadá).</p>
     <p><b>Cuidado com fluxo regional/bate-volta.</b> Hong Kong (44,5 M) e Macau (34,9 M) são ~80% China continental e metade excursionistas — o estrangeiro de longa distância é ~10,5 M e ~2,4 M. Manama infla com sauditas pela ponte. Para o cross-sell, o que conta é o turista estrangeiro de verdade.</p>
-    <p style="opacity:.7;font-size:.85em">201 destinos, 17 países/regiões. Fontes: Euromonitor 2025 + ministérios/observatórios oficiais (NTTO, VisitBritain, Fáilte Ireland, Tourism Australia, CBS-NL, TAT, STB, DTCM, JNTO, ISTAT, INE, DATATUR...). Ano-base 2023–2025. Dado fraco marcado como estimativa.</p>
+    <p><b>China: só o recorte internacional.</b> As cifras chinesas que circulam quase sempre são <b>total incl. doméstico</b> (o doméstico é de centenas de milhões — não comparável a nada aqui). No mapa entra só o inbound/estrangeiro overnight (境外) quando isolável; Pequim, Xangai e Chongqing têm dado limpo, Xi'an é província, e Shenzhen/Guangzhou incham por travessia de HK/Macau.</p>
+    <p style="opacity:.7;font-size:.85em">214 destinos, 18 países/regiões. Fontes: Euromonitor 2025 + ministérios/observatórios oficiais (NTTO, VisitBritain, Fáilte Ireland, Tourism Australia, CBS-NL, TAT, STB, DTCM, JNTO, ISTAT, INE, DATATUR, birôs municipais chineses / CEIC...). Ano-base 2019–2025. Dado fraco marcado como estimativa.</p>
   </div>
 </div>
 
@@ -198,6 +199,21 @@ const PAISES = [
     {n:"Bangkok", v:32.4, mt:"chegadas intl", c:"a", t:"cidade mais visitada do mundo 2024"}, {n:"Pattaya", v:10.5, mt:"chegadas intl", c:"m", t:"província Chonburi"},
     {n:"Phuket", v:8.65, mt:"aeroporto", c:"m"}, {n:"Chiang Mai", v:3.3, mt:"estimativa", c:"b", t:"maioria doméstica"}, {n:"Krabi", v:2.5, mt:"estimativa", c:"b"},
     {n:"Koh Samui", v:1.3, mt:"estimativa", c:"b"}, {n:"Ayutthaya", v:null, mt:"estimativa", c:"b", t:"UNESCO; bate-volta de Bangkok"}
+  ]},
+  { pais:"China", flag:"🇨🇳", status:"criar", curso:"curso a criar · mandarim", cnote:"A China é opaca por cidade: o número que circula é 'total incl. doméstico' — gigantesco e enganoso (o doméstico chinês é de centenas de milhões). Aqui SÓ entra o recorte internacional (境外/entrada, estrangeiros overnight quando isolável). Ano-base 2019 (pré-COVID limpo); Xangai já com recuperação 2024. Xi'an é dado de PROVÍNCIA (Shaanxi). Shenzhen e Guangzhou incham por travessia de HK/Macau, não por turismo de longa distância.", dest:[
+    {n:"Xangai", v:6.71, mt:"estrangeiros", c:"a", t:"overnight 2024 (4,97 M em 2023); nº1 inbound da China — The Bund, Pudong"},
+    {n:"Xi'an", v:4.66, mt:"província", c:"b", t:"Shaanxi inteiro (a cidade concentra o grosso, mas não é isolável) — Guerreiros de Terracota, Rota da Seda"},
+    {n:"Pequim", v:3.21, mt:"estrangeiros", c:"a", t:"estrangeiros overnight 2019 — Cidade Proibida, Grande Muralha, Tiananmen"},
+    {n:"Guilin / Yangshuo", v:3.15, mt:"entrada", c:"m", t:"entrada c/ pernoite 2019; ícone paisagístico, pouca contaminação de compatriotas — Rio Li"},
+    {n:"Huangshan", v:2.87, mt:"entrada", c:"m", t:"inbound overseas; NÃO os 3,5 M da área cênica (doméstico) — Montanha Amarela, vilas Hui"},
+    {n:"Chongqing", v:2.35, mt:"estrangeiros", c:"a", t:"estrangeiros isolados 2019 (+0,57 M HK/Macau); o total geral é ~todo doméstico — hotpot, Yangtzé"},
+    {n:"Guangzhou", v:2.0, mt:"estrangeiros", c:"b", t:"proxy anualizado 2025; entrada total ~5 M inflada por HK/Macau — Feira de Cantão, dim sum"},
+    {n:"Suzhou", v:1.74, mt:"entrada", c:"a", t:"entrada c/ pernoite 2019; capta o trânsito sem visto de Xangai — jardins UNESCO, 'Veneza do Oriente'"},
+    {n:"Zhangjiajie", v:1.37, mt:"entrada", c:"m", t:"cenário de Avatar; total massivamente doméstico; forte mercado sul-coreano"},
+    {n:"Shenzhen", v:1.3, mt:"estimativa", c:"b", t:"entrada ~12 M é quase toda travessia HK/Macau; estrangeiro de fato ~1–1,5 M — hub tech, portão p/ HK"},
+    {n:"Hangzhou", v:1.13, mt:"entrada", c:"a", t:"entrada c/ pernoite 2019; NÃO os 202 M totais (doméstico) — Lago do Oeste, berço da Alibaba"},
+    {n:"Lijiang", v:1.08, mt:"entrada", c:"m", t:"inbound overseas; total extremamente doméstico — Cidade Velha Naxi (UNESCO)"},
+    {n:"Chengdu", v:0.47, mt:"estrangeiros", c:"b", t:"internacional real modesto; o volume é ~todo doméstico — pandas gigantes, cozinha sichuanesa"}
   ]},
 
   { pais:"Golfo & Ásia-inglês", flag:"🌐", status:"guia", curso:"guia-only · sem curso", cnote:"Megadestinos que funcionam em inglês — o guia vende sozinho, o curso é marginal. Cuidado: HK/Macau/Manama têm headline inflado por fluxo regional/bate-volta.", dest:[
