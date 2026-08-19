@@ -50,10 +50,27 @@ Marcar como **"curso a criar"** (distinto de "curso no ar"):
 - **Guia-only (curso marginal, funcionam em inglês)** — Dubai, Abu Dhabi,
   Singapura, Hong Kong, Doha.
 
-## Estado (2026-08-19)
+## Estado (2026-08-19) — os DOIS mapas reconstruídos com a grade completa
 
-- Mapa dos cursos: `aleapc.github.io/kit-de-bordo-mapa` (destinos atuais).
-- Mapa de cidades: `aleapc.github.io/guias-mapa` (140 destinos, 9 países) —
-  a expandir com os destinos novos acima.
-- Próximo: pesquisa dos números das cidades novas → reconstruir os dois mapas
-  com a grade completa.
+- **Mapa dos cursos** `aleapc.github.io/kit-de-bordo-mapa`: colunas-destino
+  novas plotadas — EUA/Reino Unido/Tailândia já existiam no grid e foram
+  marcadas ✎ "curso a criar"; **Holanda** adicionada como coluna. Objetivo
+  remarcado no topo ("a grade completa, nos dois eixos"). Inglês-destino ≈ 50 M
+  de compradores não-anglófonos (a maior coluna intocada).
+- **Mapa de cidades** `aleapc.github.io/guias-mapa`: 201 destinos, 17
+  países/regiões, 3 faixas (curso no ar / curso a criar / guia-only).
+
+### Corredores origem→destino dos destinos novos (pesquisados 2026-08-19)
+- **EUA** (não-anglófonos, ≈30 M): México 17,0 (ES) · Alemanha 2,0 · Brasil
+  1,9 · Japão 1,8 · França 1,7 · Coreia 1,7 · China 1,6 · Itália 1,1 · Espanha
+  0,9 · Holanda 0,6. Anglófonos (não compram): Canadá 20,2 · UK 4,0 · Austrália 1,0.
+- **Reino Unido** (não-anglófonos, ≈15 M): França 3,6 · Alemanha 3,3 · Espanha
+  2,5 · Holanda 2,1 · Itália 1,9 · China 0,6.
+- **Holanda** (≈15 M): Alemanha 7,5 · Bélgica 2,7 · EUA 2,2 · UK 2,0 · França 1,4.
+  Ressalva: holandeses/mercado têm altíssima proficiência em inglês.
+- **Tailândia** (≈16 M em línguas-curso): China 6,7 · Coreia 1,8 · Rússia 1,75 ·
+  Japão 1,1 · EUA+UK 2,0 · Alemanha 0,9 · França 0,85. (Malásia 5,0 e Índia 2,1
+  fora das línguas-curso.)
+- **Irlanda/Austrália/Canadá-anglófono**: ~2 M cada, caudas pequenas —
+  colunas menores, não plotadas individualmente no grid (só na prosa).
+- **Canadá francófono** (Montréal/Québec): entra no curso de FRANCÊS (já no ar).
