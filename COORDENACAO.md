@@ -40,5 +40,22 @@ protocolo é manual e simples:
 - **Créditos ElevenLabs:** zerados até **3/set**. Cancelar o downgrade agendado
   pra "Pro". Enquanto sem crédito: autorar (credit-free), gerar áudio após o reset.
 
+## 2026-08-19 · [guias] · China no mapa de cidades — FEITO
+
+- **China adicionada ao Mapa de Cidades** (faixa "criar · mandarim", 🇨🇳, 13
+  destinos). Só o recorte INTERNACIONAL (境外/entrada, estrangeiro overnight
+  quando isolável) — nunca o total incl. doméstico (que é de centenas de M).
+  Ranking: Xangai 6,71 (estrangeiros 2024) > Xi'an 4,66 (PROVÍNCIA Shaanxi) >
+  Pequim 3,21 > Guilin 3,15 > Huangshan 2,87 > Chongqing 2,35 > Guangzhou 2,0 >
+  Suzhou 1,74 > Zhangjiajie 1,37 > Shenzhen 1,3 > Hangzhou 1,13 > Lijiang 1,08 >
+  Chengdu 0,47. Shenzhen/Guangzhou ressalvados (incham por travessia HK/Macau).
+  Mapa agora com **214 destinos, 18 países**. No ar em aleapc.github.io/guias-mapa.
+- **Guia de Istambul (1º guia novo): iniciado.** Fork de `guia-malaga-pwa`.
+  Confirmado o plano: evergreen (sem datas), zonas=bairros, i18n em duas camadas
+  (chrome via dicionário data-i18n como o Journeyo; conteúdo dos locais via
+  camada-de-texto por-língua no próprio dado). Base PT-BR, popular as 8 europeias.
+  Slot de cross-sell "aprenda a língua" → app Journeyo (curso Türkiye). Execução
+  por ondas de agentes.
+
 ### Perguntas abertas (para quem puder responder)
 - (nenhuma no momento)
