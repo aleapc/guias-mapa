@@ -35,6 +35,27 @@ Para o cross-sell, o que importa é o turista **estrangeiro** — destinos
 dominados por doméstico (Oaxaca 95%, Guadalajara, Monterrey; interior do Japão)
 pesam menos que o volume bruto.
 
+## PRINCÍPIO DE ARQUITETURA (não esquecer): guias são MULTI-LÍNGUA
+
+O guia NÃO é escrito em uma língua só. A língua do turista depende do país de
+origem dele — quem vai a Istambul vem da Alemanha, Rússia, França, Brasil... Cada
+guia tem uma camada de idioma trocável, EXATAMENTE como a grade dos cursos (a
+camada de conteúdo do destino é a mesma; só o idioma do texto troca). Precedente
+pronto para clonar: a landing do Journeyo (`dev-hosting/kit-de-bordo/index.html`)
+já tem i18n de 10 idiomas (en/de/fr/it/nl/es/zh/ko/ru/pt) — `data-i18n` +
+`applyLang()` + auto-detecção `navigator.language` + localStorage + `<select>`.
+Quais idiomas priorizar por cidade = os maiores mercados de ORIGEM do destino
+(mesmos corredores do mapa dos cursos). Istambul/Türkiye: DE 6,6 M · EN (UK 4,4 +
+US 1,4) · RU · FR · ES · IT · NL · + PT-BR (mercado BR + cross-sell Journeyo).
+
+## China no mapa de cidades
+
+A China entra como seção nova (curso a criar · mandarim, 🇨🇳): cidades Pequim,
+Xangai, Xi'an, Chengdu, Guilin etc. (Hong Kong e Macau já estão na faixa
+guia-only — não duplicar). No mapa dos CURSOS a coluna mandarim-destino já foi
+montada (via proxy de saída dos países de origem, ≈9 M) — só o mapa de cidades
+falta, e é tarefa desta sessão de guias.
+
 ## Próximo passo concreto
 
 Abrir o **primeiro guia novo**. Recomendação pela lógica do mapa: **Istambul**
