@@ -40,6 +40,41 @@ protocolo é manual e simples:
 - **Créditos ElevenLabs:** zerados até **3/set**. Cancelar o downgrade agendado
   pra "Pro". Enquanto sem crédito: autorar (credit-free), gerar áudio após o reset.
 
+## 2026-08-19 · [guias] · Ordem de construção = TAM global decrescente (princípio)
+
+- **Princípio (do dono):** construir os guias na ordem **decrescente de turistas,
+  cruzando fronteiras** — o esforço por guia é ~constante, mas o TAM individual
+  varia muito. Não é "terminar um país antes do próximo"; é ir da cidade de maior
+  volume à de menor, independente do país.
+- **Ressalva metodológica:** o mapa é agrupado por país e tem a regra "não compare
+  entre países" (métricas incompatíveis: Paris=região, Lisboa=pernoites,
+  Bangkok=chegadas intl). Uma fila GLOBAL honesta exige **métrica comum** =
+  visitante internacional overnight por cidade. → tarefa [guias]: montar uma
+  "fila global de construção" ranqueada por essa métrica comparável (artefato à
+  parte do mapa), sem travar Istambul.
+- **Istambul segue sendo o começo certo:** por chegadas intl overnight é top-3
+  mundial (junto de Bangkok/Londres/Dubai/Paris-cidade) — começar por ela já é
+  começar pelo topo global.
+
+## 2026-08-19 · [guias] · Estrutura do guia de Istambul — APROVADA
+
+- **Dados multi-língua em 2 camadas.** (a) Chrome da UI = dicionário
+  `strings.<lang>` estilo data-i18n do Journeyo (finito). (b) Conteúdo dos locais
+  = camada-de-texto no próprio dado: `scripts/data/*.json` autorado em PT-BR
+  (base) com campos estruturais invariantes (id, categoryId, city, lat/lng,
+  hours, fit, mapQuery); `scripts/data/i18n/<lang>.json` chaveado por `id` só com
+  campos textuais (tagline, description, whatToDo, kingTip, whereToEat, history).
+  `build-extra.mjs` mescla em `text:{ pt:{…}, de:{…}, … }`; helper `t()` lê a
+  língua ativa com fallback PT. Back-compat: top-level fica = PT (app nunca quebra
+  enquanto o switcher não está ligado). Abrir língua nova = +1 arquivo i18n.
+- **Taxonomia (evergreen).** 8 bairros: Sultanahmet/Cidade Velha · Beyoğlu/Galata
+  · Beşiktaş/Ortaköy · Kadıköy/Moda · Üsküdar · Fatih/Balat/Fener · Bósforo ·
+  Ilhas dos Príncipes. 9 categorias temáticas: Mesquitas & monumentos · Palácios
+  & museus · Bazares & compras · Restaurantes & meze · Meyhane/rakı & noite ·
+  Cafés/doces & café turco · Bósforo & barcos · Hammams & bem-estar · Onde ficar.
+- **Cross-sell:** slot "Aprenda o básico do turco →" → app Journeyo (curso
+  Türkiye), respeitando a língua ativa; label i18n nas 8 línguas.
+
 ## 2026-08-19 · [guias] · China no mapa de cidades — FEITO
 
 - **China adicionada ao Mapa de Cidades** (faixa "criar · mandarim", 🇨🇳, 13
