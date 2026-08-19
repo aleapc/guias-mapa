@@ -6,70 +6,40 @@
 <title>Mapa de Cidades — Guias Journeyo</title>
 <style>
   :root {
-    --terracota: #C84B31;
-    --sol: #ECB365;
-    --oceano: #2D6E7E;
-    --creme: #FFF7EC;
-    --carvao: #2B2B2B;
-    --salvia: #7FA98C;
-    --alta: #2D6E7E;
-    --media: #ECB365;
-    --baixa: #B9A78C;
+    --terracota: #C84B31; --sol: #ECB365; --oceano: #2D6E7E;
+    --creme: #FFF7EC; --carvao: #2B2B2B; --salvia: #7FA98C;
+    --alta: #2D6E7E; --media: #ECB365; --baixa: #B9A78C;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--creme);
-    color: var(--carvao);
-    line-height: 1.5;
-  }
-  .wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 80px; }
+  body { margin: 0; font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--creme); color: var(--carvao); line-height: 1.5; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 32px 20px 80px; }
   header h1 { font-size: 1.7rem; margin: 0 0 4px; }
-  header .sub { color: rgba(43,43,42,.7); font-size: .98rem; max-width: 640px; }
+  header .sub { color: rgba(43,43,42,.72); font-size: .98rem; max-width: 720px; }
   .kpis { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 8px; }
-  .kpi {
-    flex: 1 1 200px;
-    background: white;
-    border-radius: 16px;
-    padding: 14px 16px;
-    box-shadow: 0 6px 18px rgba(0,0,0,.06);
-  }
+  .kpi { flex: 1 1 170px; background: white; border-radius: 16px; padding: 14px 16px; box-shadow: 0 6px 18px rgba(0,0,0,.06); }
   .kpi .n { font-size: 1.5rem; font-weight: 800; }
-  .kpi .l { font-size: .82rem; color: rgba(43,43,42,.7); margin-top: 2px; }
-  .legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0 6px; font-size: .82rem; }
+  .kpi .l { font-size: .8rem; color: rgba(43,43,42,.7); margin-top: 2px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px 20px; margin: 20px 0 6px; font-size: .8rem; align-items: center; }
   .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .sw { width: 14px; height: 14px; border-radius: 4px; display: inline-block; }
-  .rows { margin-top: 14px; }
-  .row {
-    display: grid;
-    grid-template-columns: 26px 1fr;
-    gap: 10px;
-    align-items: center;
-    padding: 7px 0;
-    border-bottom: 1px solid rgba(43,43,42,.07);
-  }
-  .rank { text-align: right; font-weight: 700; color: rgba(43,43,42,.45); font-size: .85rem; }
+  .hatch { background-image: repeating-linear-gradient(45deg, #B9A78C, #B9A78C 4px, #cbb99e 4px, #cbb99e 8px); }
+  .country { margin-top: 34px; }
+  .country h2 { font-size: 1.25rem; margin: 0 0 2px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .country h2 .flag { font-size: 1.4rem; }
+  .country h2 .course { font-size: .78rem; font-weight: 600; color: var(--oceano); }
+  .country .cnote { font-size: .8rem; color: rgba(43,43,42,.6); margin: 0 0 10px; }
+  .row { display: grid; grid-template-columns: 26px 1fr; gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid rgba(43,43,42,.06); }
+  .rank { text-align: right; font-weight: 700; color: rgba(43,43,42,.4); font-size: .82rem; }
   .barwrap { min-width: 0; }
-  .barhead { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 3px; }
-  .city { font-weight: 700; font-size: .98rem; }
-  .city .flag { margin-right: 5px; }
-  .city .course { font-weight: 500; font-size: .78rem; color: rgba(43,43,42,.55); margin-left: 6px; }
-  .arr { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .92rem; white-space: nowrap; }
+  .barhead { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 3px; flex-wrap: wrap; }
+  .dest { font-weight: 700; font-size: .95rem; }
+  .badge { font-size: .64rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; padding: 1px 6px; border-radius: 999px; margin-left: 7px; background: rgba(43,43,42,.08); color: rgba(43,43,42,.6); vertical-align: middle; }
+  .badge.guia { background: var(--salvia); color: white; }
+  .arr { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .9rem; white-space: nowrap; }
   .arr small { font-weight: 500; color: rgba(43,43,42,.5); }
-  .bar { height: 12px; border-radius: 6px; background-size: 100% 100%; }
-  .bar.baixa { background-image: repeating-linear-gradient(45deg, var(--baixa), var(--baixa) 5px, #cbb99e 5px, #cbb99e 10px); }
-  .note { font-size: .78rem; color: rgba(43,43,42,.6); margin-top: 3px; }
-  .tag { font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: 1px 6px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
-  .tag.guia-pronto { background: var(--salvia); color: white; }
-  .caveat {
-    margin-top: 34px;
-    background: var(--carvao);
-    color: rgba(255,255,255,.9);
-    border-radius: 18px;
-    padding: 22px 24px;
-    font-size: .9rem;
-  }
+  .bar { height: 11px; border-radius: 6px; }
+  .note { font-size: .76rem; color: rgba(43,43,42,.58); margin-top: 2px; }
+  .caveat { margin-top: 40px; background: var(--carvao); color: rgba(255,255,255,.9); border-radius: 18px; padding: 22px 24px; font-size: .9rem; }
   .caveat h2 { font-size: 1.05rem; margin: 0 0 8px; color: white; }
   .caveat b { color: var(--sol); }
   .caveat p { margin: 10px 0 0; }
@@ -79,83 +49,226 @@
 <div class="wrap">
   <header>
     <h1>🗺️ Mapa de Cidades — Guias Journeyo</h1>
-    <p class="sub">A ordem de construção dos guias de cidade, decidida por chegadas internacionais de turistas — do maior destino ao menor. Cada cidade casa com um curso de língua que já está no ar, pra o cross-sell ter produto dos dois lados. O eixo é o mesmo do mapa dos cursos: <b>guiar pela demanda real, não pelo palpite</b>.</p>
+    <p class="sub">Cobertura profunda dos destinos turísticos de cada país que já tem curso de língua no ar — a fila de construção dos guias. Agrupado por país porque as métricas variam (chegadas, pernoites, aeroporto, bilheteria de sítio): <b>o número vale DENTRO do país, não entre países</b>. Mesma disciplina do mapa dos cursos.</p>
   </header>
 
   <div class="kpis" id="kpis"></div>
 
   <div class="legend">
-    <span><span class="sw" style="background:var(--alta)"></span> dado firme (fonte forte)</span>
-    <span><span class="sw" style="background:var(--media)"></span> fonte oficial de cidade (métricas variam)</span>
-    <span><span class="sw" style="background:var(--baixa);background-image:repeating-linear-gradient(45deg,#B9A78C,#B9A78C 4px,#cbb99e 4px,#cbb99e 8px)"></span> estimativa — use como ordem, não como número</span>
+    <span><span class="sw" style="background:var(--alta)"></span> dado firme</span>
+    <span><span class="sw" style="background:var(--media)"></span> fonte oficial, métrica ressalvada</span>
+    <span><span class="sw hatch"></span> estimativa — só ordem de grandeza</span>
+    <span style="opacity:.7">badges: métrica de cada número (chegadas · pernoites · aeroporto · sítio · região · estimativa)</span>
   </div>
 
-  <div class="rows" id="rows"></div>
+  <div id="countries"></div>
 
   <div class="caveat">
-    <h2>Por que alguns números têm hachura (e não deve confiar na casa decimal)</h2>
-    <p>Só <b>Istambul, Antalya, Paris e Munique</b> têm chegadas internacionais medidas direto de fonte forte. O resto vem de observatórios de turismo de cidade, e as métricas <b>não batem 100% entre si</b> — mistura "chegadas", "visitantes" e "pernoites". Onde só havia pernoite (Florença, Porto, Málaga), nada foi convertido em chegada silenciosamente; o número virou estimativa e ganhou hachura.</p>
-    <p><b>Dois vieses conhecidos, em direções opostas:</b> <b>Tóquio</b> está provavelmente <b>subestimada</b> (o Japão só conta chegadas nacionalmente — 36,8 M no país — e a fatia de Tóquio foi estimada por taxa de visita). <b>Barcelona</b> e a <b>Valência-região</b> estão provavelmente <b>superestimadas</b> — a metodologia "Destinació Barcelona" infla, e os "~12 M" de Valência são da <b>região</b> (inclui a costa de Benidorm), não da cidade. <b>Cancún e Cidade do México</b> são chegadas de <b>aeroporto</b>, não da cidade — Cancún é a porta de toda a Riviera Maya.</p>
-    <p style="opacity:.7;font-size:.85em">Fontes: Euromonitor Top 100 City Destinations 2025 (espinha dorsal, chegadas do Top 10) + observatórios oficiais de cada cidade (JNTO, visitBerlin, munich.travel, Observatori Turisme BCN, Madrid Destino, SETE, aeroporto de Cancún, etc.). Ano-base 2024–2025.</p>
+    <h2>Leia antes de comparar números</h2>
+    <p><b>Não compare entre países.</b> Cada país mede diferente: a Grécia reporta <b>passageiros de aeroporto</b> (~2× as chegadas), a Alemanha e Portugal reportam <b>pernoites</b> (inflam 3-5×), a Itália reporta <b>presenze</b>, o Japão só conta chegadas <b>nacionalmente</b> (os números por cidade são taxa-de-visita estimada), e o México mistura <b>aeroporto</b> (Cancún é a porta da Riviera Maya inteira). Os badges dizem qual é qual. Ordene e priorize <b>dentro de cada país</b>.</p>
+    <p><b>Região ≠ cidade.</b> Vários números altos são de província/ilha/região, não da cidade-ícone: Paris (Île-de-France inteira), Palma/Ibiza (aeroporto da ilha), Antalya e Muğla (províncias), Algarve/Madeira (regiões). Marcados no badge/nota — não some região + cidade-âncora.</p>
+    <p><b>Para o cross-sell com os cursos, o que importa é o turista ESTRANGEIRO.</b> Destinos dominados por turismo doméstico (vários no México e no Japão interior) pesam menos para um guia em língua estrangeira do que o volume bruto sugere, mesmo quando o número é grande.</p>
+    <p style="opacity:.7;font-size:.85em">Fontes: Euromonitor 2025 + ministérios/observatórios de turismo, INE/ISTAT/JNTO/DATATUR e afins, ano-base 2023–2025. Levantado por pesquisa dedicada por país. Destinos com dado fraco marcados como estimativa.</p>
   </div>
 </div>
 
 <script>
-const DATA = [
-  {cidade:"Istambul", pais:"Türkiye", flag:"🇹🇷", arr:19.7, conf:"alta", curso:"Türkiye (EN·DE·RU)"},
-  {cidade:"Antalya", pais:"Türkiye", flag:"🇹🇷", arr:18.6, conf:"alta", curso:"Türkiye (EN·DE·RU)"},
-  {cidade:"Paris", pais:"França", flag:"🇫🇷", arr:18.3, conf:"alta", curso:"França (EN·DE·NL·ES·ZH)"},
-  {cidade:"Tóquio", pais:"Japão", flag:"🇯🇵", arr:16.0, conf:"baixa", curso:"Japão (EN)", nota:"provavelmente subestimada"},
-  {cidade:"Osaka", pais:"Japão", flag:"🇯🇵", arr:14.58, conf:"media", curso:"Japão (EN)"},
-  {cidade:"Barcelona", pais:"Espanha", flag:"🇪🇸", arr:12.0, conf:"media", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)", nota:"metodologia infla; por hotel seria ~6–8 M"},
-  {cidade:"Kyoto", pais:"Japão", flag:"🇯🇵", arr:10.88, conf:"media", curso:"Japão (EN)", nota:"inclui excursionistas; pernoite ~8,2 M"},
-  {cidade:"Cancún", pais:"México", flag:"🇲🇽", arr:9.72, conf:"media", curso:"México (EN)", nota:"chegadas do aeroporto (Riviera Maya)"},
-  {cidade:"Roma", pais:"Itália", flag:"🇮🇹", arr:8.0, conf:"media", curso:"Itália (EN·DE·NL·ES·ZH·KO)"},
-  {cidade:"Atenas", pais:"Grécia", flag:"🇬🇷", arr:7.9, conf:"media", curso:"Grécia (EN·DE·NL)"},
-  {cidade:"Lisboa", pais:"Portugal", flag:"🇵🇹", arr:6.54, conf:"media", curso:"Portugal (EN·ES)"},
-  {cidade:"Madri", pais:"Espanha", flag:"🇪🇸", arr:6.27, conf:"media", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)"},
-  {cidade:"Milão", pais:"Itália", flag:"🇮🇹", arr:6.0, conf:"baixa", curso:"Itália (EN·DE·NL·ES·ZH·KO)"},
-  {cidade:"Berlim", pais:"Alemanha", flag:"🇩🇪", arr:5.4, conf:"media", curso:"Alemanha (EN·NL·ES·ZH)"},
-  {cidade:"Veneza", pais:"Itália", flag:"🇮🇹", arr:5.11, conf:"media", curso:"Itália (EN·DE·NL·ES·ZH·KO)"},
-  {cidade:"Cidade do México", pais:"México", flag:"🇲🇽", arr:4.5, conf:"baixa", curso:"México (EN)", nota:"chegadas de aeroporto"},
-  {cidade:"Munique", pais:"Alemanha", flag:"🇩🇪", arr:3.88, conf:"alta", curso:"Alemanha (EN·NL·ES·ZH)"},
-  {cidade:"Florença", pais:"Itália", flag:"🇮🇹", arr:3.5, conf:"baixa", curso:"Itália (EN·DE·NL·ES·ZH·KO)", nota:"só há pernoites limpos (9,8 M noites)"},
-  {cidade:"Nápoles", pais:"Itália", flag:"🇮🇹", arr:3.0, conf:"baixa", curso:"Itália (EN·DE·NL·ES·ZH·KO)"},
-  {cidade:"Nice", pais:"França", flag:"🇫🇷", arr:2.5, conf:"baixa", curso:"França (EN·DE·NL·ES·ZH)", nota:"proxy do aeroporto"},
-  {cidade:"Porto", pais:"Portugal", flag:"🇵🇹", arr:2.4, conf:"baixa", curso:"Portugal (EN·ES)"},
-  {cidade:"Lyon", pais:"França", flag:"🇫🇷", arr:2.0, conf:"baixa", curso:"França (EN·DE·NL·ES·ZH)"},
-  {cidade:"Sevilha", pais:"Espanha", flag:"🇪🇸", arr:1.9, conf:"baixa", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)"},
-  {cidade:"Valência", pais:"Espanha", flag:"🇪🇸", arr:1.7, conf:"baixa", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)", nota:"os ~12 M citados são da REGIÃO, não da cidade"},
-  {cidade:"Málaga", pais:"Espanha", flag:"🇪🇸", arr:1.4, conf:"baixa", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)", guiaPronto:true, nota:"guia já no ar (precedente)"}
+// c: a=alta, m=media, b=baixa | v em milhões (null = sem dado) | m = badge métrica | t = nota curta
+const PAISES = [
+  { pais:"França", flag:"🇫🇷", curso:"curso no ar · EN·DE·NL·ES·ZH", cnote:"França mede pouco por cidade: muito é pernoite, sítio ou região. Paris aqui é a região inteira.", dest:[
+    {n:"Paris", v:48.7, mt:"região", c:"m", t:"Île-de-France inteira (inclui Versalhes+Disney); chegadas intl da cidade ≈ 18,3 M"},
+    {n:"Lyon", v:9.56, mt:"pernoites", c:"m"},
+    {n:"Versalhes", v:8.4, mt:"sítio", c:"a", t:"visitantes do château"},
+    {n:"Bordeaux", v:7.2, mt:"pernoites", c:"m"},
+    {n:"Toulouse", v:5.0, mt:"pernoites", c:"m"},
+    {n:"Saint-Tropez", v:5.0, mt:"estimativa", c:"b", t:"Golfe inteiro; a vila é bem menor"},
+    {n:"Marselha", v:3.9, mt:"visitantes", c:"m", t:"2023"},
+    {n:"Colmar", v:3.5, mt:"estimativa", c:"b"},
+    {n:"Estrasburgo", v:3.4, mt:"sítio", c:"m", t:"só o Mercado de Natal (evento)"},
+    {n:"Nantes", v:3.36, mt:"pernoites", c:"m"},
+    {n:"Mont-Saint-Michel", v:2.71, mt:"sítio", c:"a"},
+    {n:"Chamonix", v:2.5, mt:"estimativa", c:"b"},
+    {n:"Nice", v:2.2, mt:"hóspedes", c:"b", t:"aeroporto 14,2 M como proxy"},
+    {n:"Avignon", v:0.7, mt:"sítio", c:"m"},
+    {n:"Cannes", v:null, mt:"estimativa", c:"b", t:"sem total anual publicado"}
+  ]},
+  { pais:"Espanha", flag:"🇪🇸", curso:"curso no ar · EN·DE·FR·IT·NL·ZH·KO", cnote:"CUIDADO região/aeroporto: Palma e Ibiza são aeroporto da ilha; Tenerife/Gran Canaria são ilhas; Girona é província. Málaga já tem guia no ar.", dest:[
+    {n:"Palma de Mallorca", v:33.3, mt:"aeroporto", c:"m", t:"pax do aeroporto da ilha, não a cidade"},
+    {n:"Barcelona", v:15.5, mt:"visitantes", c:"m", t:"inclui excursionistas; hóspedes de hotel ~9,6 M"},
+    {n:"Madri", v:11.19, mt:"hóspedes", c:"a"},
+    {n:"Ibiza", v:9.07, mt:"aeroporto", c:"m", t:"aeroporto da ilha, não a cidade"},
+    {n:"Girona / Costa Brava", v:8.5, mt:"região", c:"b", t:"província, não a cidade"},
+    {n:"Tenerife", v:7.0, mt:"visitantes", c:"a", t:"ilha inteira (destino de guia insular)"},
+    {n:"Gran Canaria", v:4.71, mt:"visitantes", c:"a", t:"ilha inteira"},
+    {n:"Sevilha", v:3.63, mt:"hóspedes", c:"a"},
+    {n:"Granada", v:2.87, mt:"hóspedes", c:"m", t:"província; Alhambra 2,72 M é bom proxy da cidade"},
+    {n:"Valência", v:2.4, mt:"hóspedes", c:"a"},
+    {n:"Alicante", v:2.3, mt:"hóspedes", c:"a"},
+    {n:"Málaga", v:1.6, mt:"hóspedes", c:"a", guia:true},
+    {n:"Santiago de Compostela", v:1.5, mt:"estimativa", c:"m"},
+    {n:"Bilbao", v:1.24, mt:"hóspedes", c:"a"},
+    {n:"Córdoba", v:1.15, mt:"visitantes", c:"a"},
+    {n:"San Sebastián", v:1.03, mt:"hóspedes", c:"a"},
+    {n:"Toledo", v:1.0, mt:"região", c:"b", t:"província, não a cidade"},
+    {n:"Marbella", v:0.72, mt:"hóspedes", c:"a"}
+  ]},
+  { pais:"Türkiye", flag:"🇹🇷", curso:"curso no ar · EN·DE·RU", cnote:"Estatística oficial é por PROVÍNCIA. Bodrum/Fethiye/Marmaris estão dentro de Muğla; Side dentro de Antalya — não somar cidade + província. Dados 2023.", dest:[
+    {n:"Istambul", v:17.4, mt:"chegadas intl", c:"a"},
+    {n:"Antalya", v:14.8, mt:"chegadas intl", c:"a", t:"PROVÍNCIA (inclui Side, Alanya, Kemer, Belek)"},
+    {n:"Capadócia (Göreme)", v:4.83, mt:"visitantes", c:"m", t:"região, inclui doméstico"},
+    {n:"Edirne", v:4.7, mt:"chegadas intl", c:"b", t:"província de fronteira: trânsito, não lazer"},
+    {n:"Aydın (Kuşadası)", v:4.2, mt:"visitantes", c:"m", t:"província"},
+    {n:"Muğla (Bodrum/Fethiye)", v:3.3, mt:"chegadas intl", c:"a", t:"PROVÍNCIA"},
+    {n:"Pamukkale / Hierápolis", v:2.2, mt:"sítio", c:"m"},
+    {n:"Éfeso / Selçuk", v:2.2, mt:"sítio", c:"m"},
+    {n:"Izmir", v:2.0, mt:"chegadas intl", c:"m", t:"estimativa de ano cheio"},
+    {n:"Bodrum", v:1.8, mt:"aeroporto", c:"b", t:"proxy; já dentro de Muğla"},
+    {n:"Trabzon", v:1.5, mt:"visitantes", c:"m"},
+    {n:"Bursa", v:1.5, mt:"estimativa", c:"b", t:"forte doméstico"},
+    {n:"Fethiye / Ölüdeniz", v:1.5, mt:"estimativa", c:"b", t:"subconjunto de Muğla"},
+    {n:"Marmaris", v:1.2, mt:"estimativa", c:"b", t:"subconjunto de Muğla"},
+    {n:"Ancara", v:1.0, mt:"estimativa", c:"b", t:"capital, sobretudo negócios"}
+  ]},
+  { pais:"Itália", flag:"🇮🇹", curso:"curso no ar · EN·DE·NL·ES·ZH·KO", cnote:"Números são presenze (pernoites) da cidade, salvo indicação. Nápoles é 'visitatori' de observatório (inflado). Ícones difusos (Amalfi, Como, Capri) têm dado fraco.", dest:[
+    {n:"Roma", v:51.4, mt:"pernoites", c:"a", t:"ISTAT nacional lista 42,7 M — definições distintas"},
+    {n:"Nápoles", v:14.9, mt:"visitantes", c:"m", t:"observatório municipal, inclui excursionistas"},
+    {n:"Milão", v:14.1, mt:"pernoites", c:"a"},
+    {n:"Veneza", v:13.3, mt:"pernoites", c:"a", t:"forte pressão de excursionistas além disso"},
+    {n:"Florença", v:9.2, mt:"pernoites", c:"a"},
+    {n:"Turim", v:4.45, mt:"pernoites", c:"a"},
+    {n:"Lago de Como (Bellagio)", v:4.3, mt:"região", c:"m", t:"províncias Como+Lecco, não a cidade"},
+    {n:"Bologna", v:4.10, mt:"pernoites", c:"a"},
+    {n:"Pompeia", v:4.07, mt:"sítio", c:"a"},
+    {n:"Costa Amalfitana / Sorrento", v:3.0, mt:"pernoites", c:"m", t:"ancorado em Sorrento; a costa é difusa"},
+    {n:"Cinque Terre", v:3.0, mt:"estimativa", c:"b", t:"visitantes do parque, base 2022"},
+    {n:"Verona", v:3.0, mt:"pernoites", c:"b", t:"extrapolado de jan–mai"},
+    {n:"Capri", v:2.7, mt:"aeroporto", c:"b", t:"desembarques, mistura bate-volta"},
+    {n:"Pisa", v:2.19, mt:"pernoites", c:"a"},
+    {n:"Bari / Puglia", v:2.09, mt:"pernoites", c:"a", t:"cidade; região Puglia = 20,7 M"},
+    {n:"Palermo", v:1.96, mt:"pernoites", c:"m"},
+    {n:"Taormina", v:1.37, mt:"pernoites", c:"a", t:"88,5% estrangeiros"},
+    {n:"Siena", v:1.09, mt:"pernoites", c:"m"}
+  ]},
+  { pais:"México", flag:"🇲🇽", curso:"curso no ar · EN", cnote:"Muitos números são pax de AEROPORTO (Cancún = porta da Riviera Maya) ou fortemente DOMÉSTICOS (Oaxaca 95%, Guadalajara/Monterrey). Para guia em língua estrangeira, priorize os de alto internacional.", dest:[
+    {n:"Cidade do México", v:45.4, mt:"aeroporto", c:"m", t:"pax AICM, muito doméstico; cidade ~14,5 M hospedados"},
+    {n:"Cancún", v:30.4, mt:"aeroporto", c:"a", t:"porta da Riviera Maya, não só a cidade"},
+    {n:"Guadalajara", v:17.8, mt:"aeroporto", c:"a", t:"forte doméstico"},
+    {n:"Monterrey", v:13.6, mt:"aeroporto", c:"a", t:"sobretudo negócios/doméstico"},
+    {n:"Los Cabos", v:7.5, mt:"aeroporto", c:"a", t:"~58% internacional"},
+    {n:"Puerto Vallarta", v:6.8, mt:"aeroporto", c:"a"},
+    {n:"Oaxaca", v:6.1, mt:"visitantes", c:"m", t:"95% doméstico"},
+    {n:"Playa del Carmen", v:5.5, mt:"estimativa", c:"b", t:"via aeroporto de Cancún"},
+    {n:"Cozumel", v:4.6, mt:"cruzeiro", c:"a", t:"passageiros de cruzeiro (visitas de horas)"},
+    {n:"Acapulco", v:4.5, mt:"estimativa", c:"b", t:"recuperação pós-furacões"},
+    {n:"Mérida", v:3.7, mt:"aeroporto", c:"a", t:"90% doméstico; cidade ~1,75 M"},
+    {n:"San Miguel de Allende", v:2.0, mt:"visitantes", c:"m"},
+    {n:"Guanajuato", v:1.83, mt:"visitantes", c:"m", t:"forte doméstico"},
+    {n:"Tulum", v:1.23, mt:"aeroporto", c:"m", t:"aeroporto novo, subestima"},
+    {n:"Cuernavaca", v:1.0, mt:"estimativa", c:"b"}
+  ]},
+  { pais:"Alemanha", flag:"🇩🇪", curso:"curso no ar · EN·NL·ES·ZH", cnote:"Números são PERNOITES (Übernachtungen), que inflam 3-5× sobre chegadas de hóspedes. Onde há, mostro a nota com o nº de hóspedes. Dresden é a região Elbland.", dest:[
+    {n:"Berlim", v:30.6, mt:"pernoites", c:"a", t:"hóspedes: 12,7 M"},
+    {n:"Munique", v:20.0, mt:"pernoites", c:"m", t:"hóspedes: 9,3 M; ano estimado"},
+    {n:"Hamburgo", v:15.8, mt:"pernoites", c:"m", t:"extrapolado; hóspedes ~8 M"},
+    {n:"Frankfurt", v:11.14, mt:"pernoites", c:"a", t:"hóspedes: 6,4 M"},
+    {n:"Colônia", v:7.1, mt:"pernoites", c:"a", t:"hóspedes: 4,2 M"},
+    {n:"Dresden (Elbland)", v:5.7, mt:"região", c:"m", t:"região, não só a cidade (~4 M)"},
+    {n:"Düsseldorf", v:5.4, mt:"pernoites", c:"m"},
+    {n:"Nuremberg", v:3.8, mt:"pernoites", c:"a"},
+    {n:"Leipzig", v:3.8, mt:"pernoites", c:"a", t:"hóspedes: 2,0 M"},
+    {n:"Stuttgart", v:3.7, mt:"estimativa", c:"b"},
+    {n:"Bremen", v:2.4, mt:"estimativa", c:"b"},
+    {n:"Heidelberg", v:1.9, mt:"pernoites", c:"m", t:"~13,9 M visitantes incl. day-trip"},
+    {n:"Füssen / Neuschwanstein", v:1.4, mt:"sítio", c:"m", t:"admissões ao castelo"},
+    {n:"Baden-Baden", v:1.2, mt:"estimativa", c:"b"},
+    {n:"Rothenburg o.d.T.", v:0.56, mt:"pernoites", c:"m", t:"~1,9 M visitantes-dia (bate-volta)"}
+  ]},
+  { pais:"Japão", flag:"🇯🇵", curso:"curso no ar · EN (ZH/KO a seguir)", cnote:"O Japão só conta chegadas nacionalmente. Os números por cidade são taxa-de-visita estimada × 36,87 M — bons de alcance, fracos de precisão. Do 4º pra baixo, tratar como ordem de grandeza.", dest:[
+    {n:"Tóquio", v:17.7, mt:"estimativa", c:"m", t:"taxa de visita ~48% × nacional"},
+    {n:"Osaka", v:15.9, mt:"estimativa", c:"m", t:"taxa ~43%"},
+    {n:"Kyoto", v:11.0, mt:"estimativa", c:"m", t:"taxa ~30%"},
+    {n:"Fukuoka", v:4.8, mt:"estimativa", c:"m", t:"taxa ~13%"},
+    {n:"Hakone / Kanagawa", v:3.7, mt:"estimativa", c:"b", t:"prefeitura; bate-volta de Tóquio"},
+    {n:"Nagoya / Aichi", v:3.0, mt:"estimativa", c:"b"},
+    {n:"Nara", v:3.0, mt:"estimativa", c:"b", t:"bate-volta, subestimado por pernoites"},
+    {n:"Sapporo / Hokkaido", v:2.7, mt:"hóspedes", c:"m", t:"pernoites estrangeiros 9,65 M"},
+    {n:"Monte Fuji (Yamanashi)", v:2.6, mt:"estimativa", c:"b"},
+    {n:"Okinawa", v:2.1, mt:"chegadas intl", c:"m", t:"chegadas contáveis por ar/mar"},
+    {n:"Hiroshima", v:1.7, mt:"hóspedes", c:"b"},
+    {n:"Takayama / Shirakawa-go", v:1.1, mt:"estimativa", c:"b"},
+    {n:"Kanazawa", v:0.9, mt:"estimativa", c:"b"},
+    {n:"Nikko", v:0.7, mt:"estimativa", c:"b", t:"bate-volta de Tóquio"}
+  ]},
+  { pais:"Grécia", flag:"🇬🇷", curso:"curso no ar · EN·DE·NL", cnote:"Quase tudo é PAX de aeroporto (ida+volta ≈ 2× as chegadas). Ilhas são ~100% internacionais; Atenas/Thessaloniki têm forte doméstico. Naxos/Paros chegam muito por ferry (subcontado).", dest:[
+    {n:"Atenas", v:31.85, mt:"aeroporto", c:"a", t:"chegadas intl aéreas ≈ 8,0 M"},
+    {n:"Creta / Heraklion", v:9.38, mt:"aeroporto", c:"a", t:"só Heraklion; Creta toda ~13,3 M"},
+    {n:"Thessaloniki", v:7.4, mt:"aeroporto", c:"a", t:"~metade doméstico"},
+    {n:"Rhodes", v:6.92, mt:"aeroporto", c:"a"},
+    {n:"Corfu", v:3.9, mt:"aeroporto", c:"a"},
+    {n:"Santorini", v:2.87, mt:"aeroporto", c:"m", t:"~3,4 M incl. cruzeiro"},
+    {n:"Kos", v:2.7, mt:"aeroporto", c:"a"},
+    {n:"Meteora", v:2.25, mt:"estimativa", c:"b", t:"sem contagem oficial"},
+    {n:"Zakynthos", v:2.22, mt:"aeroporto", c:"a"},
+    {n:"Mykonos", v:1.61, mt:"aeroporto", c:"a"},
+    {n:"Naxos", v:0.6, mt:"estimativa", c:"m", t:"muito ferry, subcontado"},
+    {n:"Paros", v:0.36, mt:"aeroporto", c:"m", t:"maioria chega por ferry"},
+    {n:"Halkidiki", v:null, mt:"estimativa", c:"b", t:"~50% chega de carro, sem série"}
+  ]},
+  { pais:"Portugal", flag:"🇵🇹", curso:"curso no ar · EN·ES", cnote:"Números são DORMIDAS (pernoites), incl. doméstico. Algarve/Madeira/Açores são REGIÕES (contêm suas cidades-âncora — não somar). Lisboa: dado firme de hóspedes é 6,7 M.", dest:[
+    {n:"Algarve (região)", v:20.7, mt:"região", c:"m", t:"contém Albufeira/Faro/Lagos"},
+    {n:"Lisboa", v:19.2, mt:"pernoites", c:"m", t:"hóspedes: 6,7 M (dado firme)"},
+    {n:"Madeira (região)", v:11.7, mt:"região", c:"m", t:"contém Funchal"},
+    {n:"Albufeira", v:7.7, mt:"pernoites", c:"a", t:"2º município do país"},
+    {n:"Funchal", v:6.3, mt:"pernoites", c:"a"},
+    {n:"Porto", v:6.3, mt:"pernoites", c:"m"},
+    {n:"Açores (região)", v:4.3, mt:"região", c:"m", t:"âncora Ponta Delgada"},
+    {n:"Sintra", v:3.4, mt:"sítio", c:"a", t:"entradas em monumentos (bate-volta)"},
+    {n:"Cascais", v:2.5, mt:"estimativa", c:"b"},
+    {n:"Lagos", v:1.3, mt:"pernoites", c:"b"},
+    {n:"Faro", v:1.2, mt:"estimativa", c:"b"},
+    {n:"Coimbra", v:0.71, mt:"pernoites", c:"a"},
+    {n:"Évora", v:0.71, mt:"pernoites", c:"a"},
+    {n:"Braga", v:0.65, mt:"estimativa", c:"b"},
+    {n:"Aveiro", v:0.45, mt:"pernoites", c:"a"},
+    {n:"Guimarães", v:0.385, mt:"pernoites", c:"a"},
+    {n:"Óbidos", v:0.2, mt:"estimativa", c:"b", t:"day-trip forte, dormidas baixas"}
+  ]}
 ];
 
-const COR = { alta:"var(--alta)", media:"var(--media)", baixa:"var(--baixa)" };
-const max = Math.max(...DATA.map(d => d.arr));
+const COR = { a:"#2D6E7E", m:"#ECB365", b:"#B9A78C" };
+const totalDest = PAISES.reduce((s,p)=>s+p.dest.length,0);
 
-// KPIs
-const totalArr = DATA.reduce((s,d) => s + d.arr, 0);
-const nAlta = DATA.filter(d => d.conf === "alta").length;
-const nPaises = new Set(DATA.map(d => d.pais)).size;
 document.getElementById("kpis").innerHTML = `
-  <div class="kpi"><div class="n">${DATA.length}</div><div class="l">cidades-candidatas, todas com curso já no ar</div></div>
-  <div class="kpi"><div class="n">${nPaises}</div><div class="l">países / cursos que elas cobrem</div></div>
-  <div class="kpi"><div class="n">1</div><div class="l">guia já no ar (Málaga) — o precedente</div></div>
+  <div class="kpi"><div class="n">${totalDest}</div><div class="l">destinos catalogados</div></div>
+  <div class="kpi"><div class="n">${PAISES.length}</div><div class="l">países, todos com curso no ar</div></div>
+  <div class="kpi"><div class="n">1</div><div class="l">guia já no ar (Málaga)</div></div>
 `;
 
-// Rows
-document.getElementById("rows").innerHTML = DATA.map((d, i) => `
-  <div class="row">
-    <div class="rank">${i+1}</div>
-    <div class="barwrap">
-      <div class="barhead">
-        <div class="city"><span class="flag">${d.flag}</span>${d.cidade}<span class="course">· ${d.curso}</span>${d.guiaPronto ? '<span class="tag guia-pronto">guia no ar</span>' : ''}</div>
-        <div class="arr">${d.arr.toLocaleString('pt-BR')}<small> M</small></div>
+document.getElementById("countries").innerHTML = PAISES.map(p => {
+  const max = Math.max(...p.dest.map(d => d.v || 0));
+  const rows = p.dest.map((d, i) => {
+    const w = d.v ? Math.max(4, d.v/max*100) : 0;
+    const barStyle = d.c === "b"
+      ? `width:${w}%;background-image:repeating-linear-gradient(45deg,#B9A78C,#B9A78C 4px,#cbb99e 4px,#cbb99e 8px)`
+      : `width:${w}%;background-color:${COR[d.c]}`;
+    return `<div class="row">
+      <div class="rank">${i+1}</div>
+      <div class="barwrap">
+        <div class="barhead">
+          <div class="dest">${d.n}<span class="badge">${d.mt}</span>${d.guia?'<span class="badge guia">guia no ar</span>':''}</div>
+          <div class="arr">${d.v!=null ? d.v.toLocaleString('pt-BR')+'<small> M</small>' : '<small>s/ dado</small>'}</div>
+        </div>
+        ${d.v!=null ? `<div class="bar" style="${barStyle}"></div>` : ''}
+        ${d.t?`<div class="note">${d.t}</div>`:''}
       </div>
-      <div class="bar ${d.conf}" style="width:${Math.max(4, d.arr/max*100)}%; background-color:${COR[d.conf]}"></div>
-      ${d.nota ? `<div class="note">${d.nota}</div>` : ''}
-    </div>
-  </div>
-`).join("");
+    </div>`;
+  }).join("");
+  return `<section class="country">
+    <h2><span class="flag">${p.flag}</span>${p.pais}<span class="course">${p.curso}</span></h2>
+    <p class="cnote">${p.cnote}</p>
+    ${rows}
+  </section>`;
+}).join("");
 </script>
 </body>
 </html>
