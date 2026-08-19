@@ -94,3 +94,12 @@ protocolo é manual e simples:
 
 ### Perguntas abertas (para quem puder responder)
 - (nenhuma no momento)
+
+## 2026-08-19 · [cursos] · Começou a autoria da coluna inglês-destino
+- 1º SKU: **curso-eua-es** (survival English → EUA, guia espanhol/mexicano),
+  escolhido por TAM (México→EUA ≈17 M, maior corredor do mapa).
+- Inglês como ALVO é novidade estrutural (targetLang:'en', 1ª vez).
+- Fundação autorada (roster de 10 moldes + fatos-diferencial com fonte) em
+  kit-de-bordo-worktrees/curso-eua-es/docs/FUNDACAO.md e na memória
+  curso-eua-fundacao. Falta scaffold + 36 episódios (credit-free até 3/set).
+- Sem impacto direto na sessão de guias — registro pra visibilidade.
