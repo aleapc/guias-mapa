@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mapa de Cidades — Guias Journeyo</title>
+<style>
+  :root {
+    --terracota: #C84B31;
+    --sol: #ECB365;
+    --oceano: #2D6E7E;
+    --creme: #FFF7EC;
+    --carvao: #2B2B2B;
+    --salvia: #7FA98C;
+    --alta: #2D6E7E;
+    --media: #ECB365;
+    --baixa: #B9A78C;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--creme);
+    color: var(--carvao);
+    line-height: 1.5;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 80px; }
+  header h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  header .sub { color: rgba(43,43,42,.7); font-size: .98rem; max-width: 640px; }
+  .kpis { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 8px; }
+  .kpi {
+    flex: 1 1 200px;
+    background: white;
+    border-radius: 16px;
+    padding: 14px 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  }
+  .kpi .n { font-size: 1.5rem; font-weight: 800; }
+  .kpi .l { font-size: .82rem; color: rgba(43,43,42,.7); margin-top: 2px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0 6px; font-size: .82rem; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 14px; height: 14px; border-radius: 4px; display: inline-block; }
+  .rows { margin-top: 14px; }
+  .row {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(43,43,42,.07);
+  }
+  .rank { text-align: right; font-weight: 700; color: rgba(43,43,42,.45); font-size: .85rem; }
+  .barwrap { min-width: 0; }
+  .barhead { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 3px; }
+  .city { font-weight: 700; font-size: .98rem; }
+  .city .flag { margin-right: 5px; }
+  .city .course { font-weight: 500; font-size: .78rem; color: rgba(43,43,42,.55); margin-left: 6px; }
+  .arr { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .92rem; white-space: nowrap; }
+  .arr small { font-weight: 500; color: rgba(43,43,42,.5); }
+  .bar { height: 12px; border-radius: 6px; background-size: 100% 100%; }
+  .bar.baixa { background-image: repeating-linear-gradient(45deg, var(--baixa), var(--baixa) 5px, #cbb99e 5px, #cbb99e 10px); }
+  .note { font-size: .78rem; color: rgba(43,43,42,.6); margin-top: 3px; }
+  .tag { font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: 1px 6px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
+  .tag.guia-pronto { background: var(--salvia); color: white; }
+  .caveat {
+    margin-top: 34px;
+    background: var(--carvao);
+    color: rgba(255,255,255,.9);
+    border-radius: 18px;
+    padding: 22px 24px;
+    font-size: .9rem;
+  }
+  .caveat h2 { font-size: 1.05rem; margin: 0 0 8px; color: white; }
+  .caveat b { color: var(--sol); }
+  .caveat p { margin: 10px 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🗺️ Mapa de Cidades — Guias Journeyo</h1>
+    <p class="sub">A ordem de construção dos guias de cidade, decidida por chegadas internacionais de turistas — do maior destino ao menor. Cada cidade casa com um curso de língua que já está no ar, pra o cross-sell ter produto dos dois lados. O eixo é o mesmo do mapa dos cursos: <b>guiar pela demanda real, não pelo palpite</b>.</p>
+  </header>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="legend">
+    <span><span class="sw" style="background:var(--alta)"></span> dado firme (fonte forte)</span>
+    <span><span class="sw" style="background:var(--media)"></span> fonte oficial de cidade (métricas variam)</span>
+    <span><span class="sw" style="background:var(--baixa);background-image:repeating-linear-gradient(45deg,#B9A78C,#B9A78C 4px,#cbb99e 4px,#cbb99e 8px)"></span> estimativa — use como ordem, não como número</span>
+  </div>
+
+  <div class="rows" id="rows"></div>
+
+  <div class="caveat">
+    <h2>Por que alguns números têm hachura (e não deve confiar na casa decimal)</h2>
+    <p>Só <b>Istambul, Antalya, Paris e Munique</b> têm chegadas internacionais medidas direto de fonte forte. O resto vem de observatórios de turismo de cidade, e as métricas <b>não batem 100% entre si</b> — mistura "chegadas", "visitantes" e "pernoites". Onde só havia pernoite (Florença, Porto, Málaga), nada foi convertido em chegada silenciosamente; o número virou estimativa e ganhou hachura.</p>
+    <p><b>Dois vieses conhecidos, em direções opostas:</b> <b>Tóquio</b> está provavelmente <b>subestimada</b> (o Japão só conta chegadas nacionalmente — 36,8 M no país — e a fatia de Tóquio foi estimada por taxa de visita). <b>Barcelona</b> e a <b>Valência-região</b> estão provavelmente <b>superestimadas</b> — a metodologia "Destinació Barcelona" infla, e os "~12 M" de Valência são da <b>região</b> (inclui a costa de Benidorm), não da cidade. <b>Cancún e Cidade do México</b> são chegadas de <b>aeroporto</b>, não da cidade — Cancún é a porta de toda a Riviera Maya.</p>
+    <p style="opacity:.7;font-size:.85em">Fontes: Euromonitor Top 100 City Destinations 2025 (espinha dorsal, chegadas do Top 10) + observatórios oficiais de cada cidade (JNTO, visitBerlin, munich.travel, Observatori Turisme BCN, Madrid Destino, SETE, aeroporto de Cancún, etc.). Ano-base 2024–2025.</p>
+  </div>
+</div>
+
+<script>
+const DATA = [
+  {cidade:"Istambul", pais:"Türkiye", flag:"🇹🇷", arr:19.7, conf:"alta", curso:"Türkiye (EN·DE·RU)"},
+  {cidade:"Antalya", pais:"Türkiye", flag:"🇹🇷", arr:18.6, conf:"alta", curso:"Türkiye (EN·DE·RU)"},
+  {cidade:"Paris", pais:"França", flag:"🇫🇷", arr:18.3, conf:"alta", curso:"França (EN·DE·NL·ES·ZH)"},
+  {cidade:"Tóquio", pais:"Japão", flag:"🇯🇵", arr:16.0, conf:"baixa", curso:"Japão (EN)", nota:"provavelmente subestimada"},
+  {cidade:"Osaka", pais:"Japão", flag:"🇯🇵", arr:14.58, conf:"media", curso:"Japão (EN)"},
+  {cidade:"Barcelona", pais:"Espanha", flag:"🇪🇸", arr:12.0, conf:"media", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)", nota:"metodologia infla; por hotel seria ~6–8 M"},
+  {cidade:"Kyoto", pais:"Japão", flag:"🇯🇵", arr:10.88, conf:"media", curso:"Japão (EN)", nota:"inclui excursionistas; pernoite ~8,2 M"},
+  {cidade:"Cancún", pais:"México", flag:"🇲🇽", arr:9.72, conf:"media", curso:"México (EN)", nota:"chegadas do aeroporto (Riviera Maya)"},
+  {cidade:"Roma", pais:"Itália", flag:"🇮🇹", arr:8.0, conf:"media", curso:"Itália (EN·DE·NL·ES·ZH·KO)"},
+  {cidade:"Atenas", pais:"Grécia", flag:"🇬🇷", arr:7.9, conf:"media", curso:"Grécia (EN·DE·NL)"},
+  {cidade:"Lisboa", pais:"Portugal", flag:"🇵🇹", arr:6.54, conf:"media", curso:"Portugal (EN·ES)"},
+  {cidade:"Madri", pais:"Espanha", flag:"🇪🇸", arr:6.27, conf:"media", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)"},
+  {cidade:"Milão", pais:"Itália", flag:"🇮🇹", arr:6.0, conf:"baixa", curso:"Itália (EN·DE·NL·ES·ZH·KO)"},
+  {cidade:"Berlim", pais:"Alemanha", flag:"🇩🇪", arr:5.4, conf:"media", curso:"Alemanha (EN·NL·ES·ZH)"},
+  {cidade:"Veneza", pais:"Itália", flag:"🇮🇹", arr:5.11, conf:"media", curso:"Itália (EN·DE·NL·ES·ZH·KO)"},
+  {cidade:"Cidade do México", pais:"México", flag:"🇲🇽", arr:4.5, conf:"baixa", curso:"México (EN)", nota:"chegadas de aeroporto"},
+  {cidade:"Munique", pais:"Alemanha", flag:"🇩🇪", arr:3.88, conf:"alta", curso:"Alemanha (EN·NL·ES·ZH)"},
+  {cidade:"Florença", pais:"Itália", flag:"🇮🇹", arr:3.5, conf:"baixa", curso:"Itália (EN·DE·NL·ES·ZH·KO)", nota:"só há pernoites limpos (9,8 M noites)"},
+  {cidade:"Nápoles", pais:"Itália", flag:"🇮🇹", arr:3.0, conf:"baixa", curso:"Itália (EN·DE·NL·ES·ZH·KO)"},
+  {cidade:"Nice", pais:"França", flag:"🇫🇷", arr:2.5, conf:"baixa", curso:"França (EN·DE·NL·ES·ZH)", nota:"proxy do aeroporto"},
+  {cidade:"Porto", pais:"Portugal", flag:"🇵🇹", arr:2.4, conf:"baixa", curso:"Portugal (EN·ES)"},
+  {cidade:"Lyon", pais:"França", flag:"🇫🇷", arr:2.0, conf:"baixa", curso:"França (EN·DE·NL·ES·ZH)"},
+  {cidade:"Sevilha", pais:"Espanha", flag:"🇪🇸", arr:1.9, conf:"baixa", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)"},
+  {cidade:"Valência", pais:"Espanha", flag:"🇪🇸", arr:1.7, conf:"baixa", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)", nota:"os ~12 M citados são da REGIÃO, não da cidade"},
+  {cidade:"Málaga", pais:"Espanha", flag:"🇪🇸", arr:1.4, conf:"baixa", curso:"Espanha (EN·DE·FR·IT·NL·ZH·KO)", guiaPronto:true, nota:"guia já no ar (precedente)"}
+];
+
+const COR = { alta:"var(--alta)", media:"var(--media)", baixa:"var(--baixa)" };
+const max = Math.max(...DATA.map(d => d.arr));
+
+// KPIs
+const totalArr = DATA.reduce((s,d) => s + d.arr, 0);
+const nAlta = DATA.filter(d => d.conf === "alta").length;
+const nPaises = new Set(DATA.map(d => d.pais)).size;
+document.getElementById("kpis").innerHTML = `
+  <div class="kpi"><div class="n">${DATA.length}</div><div class="l">cidades-candidatas, todas com curso já no ar</div></div>
+  <div class="kpi"><div class="n">${nPaises}</div><div class="l">países / cursos que elas cobrem</div></div>
+  <div class="kpi"><div class="n">1</div><div class="l">guia já no ar (Málaga) — o precedente</div></div>
+`;
+
+// Rows
+document.getElementById("rows").innerHTML = DATA.map((d, i) => `
+  <div class="row">
+    <div class="rank">${i+1}</div>
+    <div class="barwrap">
+      <div class="barhead">
+        <div class="city"><span class="flag">${d.flag}</span>${d.cidade}<span class="course">· ${d.curso}</span>${d.guiaPronto ? '<span class="tag guia-pronto">guia no ar</span>' : ''}</div>
+        <div class="arr">${d.arr.toLocaleString('pt-BR')}<small> M</small></div>
+      </div>
+      <div class="bar ${d.conf}" style="width:${Math.max(4, d.arr/max*100)}%; background-color:${COR[d.conf]}"></div>
+      ${d.nota ? `<div class="note">${d.nota}</div>` : ''}
+    </div>
+  </div>
+`).join("");
+</script>
+</body>
+</html>
