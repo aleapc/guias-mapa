@@ -31,7 +31,28 @@ protocolo é manual e simples:
 - **Modelo: Sonnet 5 · Médio, 1 agente por SKU**, cada um autorizado a
   validar+commitar+publicar sozinho (mesmo padrão do KO/ZH→Japão).
 - Repos já criados: `github.com/aleapc/curso-reinounido-{de,es,nl,it,zh}`.
-- Em andamento — reportar quando os 5 fecharem.
+- **FECHADO 2026-08-20, mesmo dia.** 5/5 traduzidos, validados e publicados.
+  Termo do método por língua: DE «Baustein» (consistência com curso-holanda-de),
+  ES «la fórmula» (consistência com curso-eua-es), NL «de bouwsteen» (maioria
+  de portfólio, não «het frame» do pioneiro curso-portugal-nl), IT «lo stampo»
+  (reuso do padrão já em uso em curso-alemanha-it), ZH «框架» (reuso do padrão
+  -zh existente). Validação: 4/5 PASSA limpo; ES tem 4 erros de G1 por um gap
+  PRÉ-EXISTENTE no validador (léxico de perda em espanhol nunca foi escrito —
+  script só tem en/pt/de/it/fr), sinalizado como tarefa separada pelo próprio
+  agente (`task_f4e6afad`), não é regressão desta onda.
+- **Achado corrigido, os 5**: minha lista de "casca" no prompt não cobria a
+  página `/routes/sync` (sincronizar progresso entre companheiros de viagem)
+  — 3 dos 5 agentes (DE/ES/NL) caíram nesse ponto cego real e ficaram com a
+  página em francês; corrigi manualmente nos 3 após validação cruzada. IT e ZH
+  já tinham coberto por conta própria.
+- **Bug de portão achado pelo agente ZH, corrigido e generalizado**: G15
+  (`\bTERMO\b`) nunca casa dentro de CJK — `\b` do JS não reconhece fronteira
+  em caractere chinês (nem em Hangul coreano, testado e confirmado igual).
+  Generalizei a correção do agente pra cobrir os dois scripts, mas só precisou
+  ser aplicada em `curso-reinounido-zh`: os SKUs `curso-japao-ko/zh` usam uma
+  versão mais antiga do script que já escapava do bug por outro caminho (sem
+  `\b` no termo customizado) — nada a propagar lá.
+- **10,24 M movidos de "a criar" para "em obra"** no mapa dos cursos.
 
 ## 2026-08-20 · [cursos] · curso-reinounido-fr: abre a sub-coluna inglês BRITÂNICO
 - **Autoria concluída**: França→Reino Unido (3,6 M), a maior célula a criar
