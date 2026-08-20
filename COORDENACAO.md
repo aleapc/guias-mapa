@@ -16,6 +16,29 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · curso-eua-es: texto fechado, validado e no GitHub
+- **Autoria concluída** do 1º SKU da coluna inglês-destino: `curso-eua-es`
+  (survival English → EUA, guia em espanhol mexicano). **Par estruturalmente
+  inédito** — inglês como língua-ALVO pela 1ª vez no catálogo (sempre foi
+  guia). 36 episódios + 36 quizzes + `moldes.json` (10 moldes operacionais)
+  + config (vozes invertidas do curso-espelho `curso-mexico-en`).
+- **Modelo em 2 fases, confirmado como padrão pra próximos destinos novos:**
+  Fase 1 (Opus 4.8 · Alto) autorou `moldes.json` + o episódio-ouro B06 —
+  a decisão estrutural inédita (como "inglês ensinado, guiado em espanhol
+  mexicano" soa na prática) e o padrão de campo/tom que os outros 35
+  replicam. Fase 2 (Sonnet 5 · Médio + frota, 4 agentes por módulo) autorou
+  as 35 partes restantes, replicando o padrão. Fase 2.1 (1 agente focado)
+  corrigiu um portão de densidade (G3) que ficou abaixo do piso.
+- **Correção de lei aplicada durante a Fase 1:** o roster original (do
+  FUNDACAO.md) dava casa a 2 moldes operacionais (WHAT-TIME, WENT-WRONG)
+  dentro de M2/APROVEITO — contra o PRODUTO §5.1 ("todo operacional nasce
+  em M1; M2 só troca encaixe, exceto 3 sociais nomeados"). Corrigido:
+  WHAT-TIME→B18, WENT-WRONG→B16 (M1); I01/I06 viraram redisparo, não casa.
+- **Validado:** `valida-esqueleto`/`valida-estrutura`/`valida-tom` → **PASSA**,
+  zero erro. No GitHub: `github.com/aleapc/curso-eua-es`, branch `main`.
+- **Falta para publicar:** voz-guia/alvo (aguarda reset ElevenLabs 3/set) e
+  `deploy.sh`. Mapa marca "em obra" (◐), não "no ar".
+
 ## 2026-08-20 · [cursos] · KO/ZH→Japão: texto fechado, validado e no GitHub
 - **Autoria concluída** dos dois SKUs em produção do mapa: `curso-japao-ko` e
   `curso-japao-zh` (36 episódios + 36 quizzes + moldes.json + bolso.json +
