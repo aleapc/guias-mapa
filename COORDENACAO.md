@@ -632,3 +632,25 @@ protocolo é manual e simples:
 - **Fila de fotos do Mac:** …guia-novayork (108) → **guia-lasvegas (108)** — pedido nº 23.
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Edirne (4,7 M, Türkiye)**,
   depois Miami (4,4), Los Angeles (3,6), Orlando (3,5), Sydney (3,2).
+
+## 2026-08-20 · [guias] · Edirne PUBLICADA (12º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-edirne/ (repo `aleapc/guia-edirne`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-edirne).
+- Fork do guia-istambul. **71 locais** (dimensão honesta p/ cidade pequena — NÃO
+  forcei 108) em 8 áreas (Selimiye & centro, Bazares, grandes mesquitas, Complexo
+  Beyazıt II, rios Meriç & Tunca, Sarayiçi & Kırkpınar, Karaağaç & Lausanne,
+  arredores) + 8 categorias temáticas. **8 idiomas** (pt/de/en/ru/nl/fr/it/es).
+  Info-local Turquia/Edirne (lira, 112, ônibus de Istambul ~2,5h). Cross-sell →
+  **curso de turco** (recíproca). Verificado ao vivo em italiano (Selimiye traduzida).
+- **Escolhida pelo MAPA:** maior chegadas intl sem selo (4,7 M — mas nota do mapa
+  diz "fronteira: trânsito, não lazer"; o TAM é inflado por travessia). Guia
+  patrimonial legítimo (antiga capital otomana, Selimiye UNESCO), mas de **valor
+  comercial menor** que os anteriores.
+- **Selo no mapa + KPI 11→12** (…Las Vegas, Edirne).
+- **DECISÃO DE DIMENSÃO:** para cidades pequenas, dimensionar aos locais REAIS
+  (~70) em vez de forçar 108 com enchimento fraco. Playbook flexiona no tamanho.
+- **Fila de fotos do Mac:** …guia-lasvegas (108) → **guia-edirne (71)** — pedido nº 24.
+- **NOTA sobre o long-tail do mapa:** daqui pra baixo o TAM cai (<5 M) e várias
+  entradas são infladas por trânsito de fronteira/doméstico. Próximas: Miami (4,4),
+  Los Angeles (3,6), Orlando (3,5), Sydney (3,2), Muğla/Bodrum (3,3). Continuo pelo
+  mapa; vale o dono revisar se quer priorizar valor comercial vs. TAM bruto no tail.
