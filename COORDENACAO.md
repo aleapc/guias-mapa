@@ -16,6 +16,33 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · curso-holanda-de: 2º destino novo, texto fechado e no GitHub
+- **Autoria concluída** do `curso-holanda-de` (survival Neerlandês → Países
+  Baixos, guia em ALEMÃO). 2ª maior alavanca a criar do mapa depois do inglês:
+  **Alemanha→Países Baixos = 7,54 M**, a maior célula "a criar" isolada, e o
+  **neerlandês como língua-ALVO pela 1ª vez** no catálogo. 36 ep + 36 quiz +
+  moldes.json (10 operacionais + 3 sociais) + config + casca.
+- **Scaffold do espelho exato `curso-alemanha-nl`** (NL→Alemanha), papéis de
+  voz invertidos: guia alemã Juli/Thomas, alvo neerlandês Noa/Wim.
+- **Par mais PRÓXIMO do catálogo** (duas germânicas ocidentais vizinhas): o
+  neerlandês é o destino morfologicamente mais fácil — sem caso, «een»
+  invariável, estrutura V2 pronta. O custo do aluno migra de montar a frase
+  para a **ARMADILHA DO COGNATO** (falso amigo: mogen≠mögen, eng≠eng,
+  brutaal≠brutal) e a pronúncia (g/ch, ui, ij). Marca do produto: «Zeg het
+  maar!»; termo do método: «Baustein».
+- **Modelo:** Fase 1 Opus 4.8 Alto (FUNDACAO com pesquisa sourced dos
+  diferenciais NL — PINNEN é o fato nº1 — + moldes + ouro B06); Fase 2
+  Sonnet 5 Médio + frota (35 partes + 3 sociais). Mesmo padrão do curso-eua-es.
+- **Correções de lei/robustez:** WANN-IST movido de I01 (M2) → B18 (M1),
+  mesma violação §5.1 do eua-es; reclassifiquei 2 politeners que ocupavam
+  indevidamente o teto social; adicionei entrada 'nl' à tabela MARCAS do G14
+  (par de MAIOR risco de vazamento do catálogo por proximidade DE↔NL).
+- **Percalço:** um blip de rede ("connection lost") derrubou os 4 agentes da
+  Fase 2 quase juntos, com pouca gravação; relançados, fecharam limpo.
+- **Validado:** esqueleto/estrutura/tom → **PASSA**, zero erro. No GitHub:
+  `github.com/aleapc/curso-holanda-de`. Falta voz-guia/alvo (reset ElevenLabs
+  3/set) e deploy. Mapa marca "em obra" (◐).
+
 ## 2026-08-20 · [cursos] · curso-eua-es: texto fechado, validado e no GitHub
 - **Autoria concluída** do 1º SKU da coluna inglês-destino: `curso-eua-es`
   (survival English → EUA, guia em espanhol mexicano). **Par estruturalmente
