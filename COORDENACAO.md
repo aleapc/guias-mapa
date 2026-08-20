@@ -16,6 +16,23 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · Onda Reino Unido: 5 derivações disparadas (DE/ES/NL/IT/ZH)
+- **Linha de derivação**, confirmada com o dono: agora que EUA/Reino
+  Unido/Países Baixos estão abertos como destino, as próximas células mais
+  baratas são as OUTRAS origens pra esses mesmos destinos (reúso total da
+  camada-alvo, só a guia é nova) — em vez de abrir mais um destino novo.
+- **5 SKUs disparados de uma vez, todos Reino Unido**: `curso-reinounido-de`
+  (Alemanha→UK 3,34 M), `-es` (Espanha→UK 2,56 M), `-nl` (Países Baixos→UK
+  1,97 M), `-it` (Itália→UK 1,87 M), `-zh` (China→UK 0,50 M) = 10,24 M.
+  Scaffold clonado de `curso-reinounido-fr`, cada um trocando só a voz-guia
+  (vozes já existentes no catálogo: Juli/Thomas·Carmen/Emilio·Noa/Wim·
+  GuiaFem-Fabio-it/Susan-Zack) — a camada-alvo britânica (Alice/George) é
+  100% reusada, sem Fase 1/Opus.
+- **Modelo: Sonnet 5 · Médio, 1 agente por SKU**, cada um autorizado a
+  validar+commitar+publicar sozinho (mesmo padrão do KO/ZH→Japão).
+- Repos já criados: `github.com/aleapc/curso-reinounido-{de,es,nl,it,zh}`.
+- Em andamento — reportar quando os 5 fecharem.
+
 ## 2026-08-20 · [cursos] · curso-reinounido-fr: abre a sub-coluna inglês BRITÂNICO
 - **Autoria concluída**: França→Reino Unido (3,6 M), a maior célula a criar
   depois das já abertas. Scaffold clonado do `curso-eua-es` (reúso da camada-
