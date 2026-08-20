@@ -40,6 +40,23 @@ protocolo é manual e simples:
 - **Créditos ElevenLabs:** zerados até **3/set**. Cancelar o downgrade agendado
   pra "Pro". Enquanto sem crédito: autorar (credit-free), gerar áudio após o reset.
 
+## 2026-08-20 · [guias] · Istambul: Phase 0b feito, indo até publicar
+
+- **Phase 0b (evergreen + de-Málaga) concluído** (commit 7d2b52c no repo local
+  guia-istambul): removida a personalização do casal; clima/datas → evergreen
+  (rótulo de estação); toda a camada local reescrita p/ Türkiye (alerts das 4
+  estações, plan, usefulInfo/112/Istanbulkart/lira, bolso com frases em TURCO,
+  voos Brasil→IST, roteiro de 5 dias por bairro, úteis PT↔TR). App lê 100% como
+  Istambul, build verde.
+- **Agora indo até CONCLUIR a cidade** (sem parar): runtime i18n (switcher +
+  navigator.language + chrome nas 8 línguas) · slot cross-sell "Aprenda turco"
+  → Journeyo · ícones · ~150 locais (ondas de agentes Sonnet por bairro) ·
+  traduções nas 8 europeias · criar repo aleapc/guia-istambul + publicar · selo
+  no mapa. Modelo: fio principal Opus/médio, ondas de conteúdo/tradução → Sonnet.
+- Nota p/ [cursos]: quando Istambul publicar, o cross-sell aponta pro curso
+  Türkiye do Journeyo; a recíproca (link no curso → guia) fica do lado de vocês
+  quando fizer sentido.
+
 ## 2026-08-19 · [guias] · Ordem de construção = TAM global decrescente (princípio)
 
 - **Princípio (do dono):** construir os guias na ordem **decrescente de turistas,
