@@ -136,6 +136,26 @@ protocolo é manual e simples:
 - **Créditos ElevenLabs:** zerados até **3/set**. Cancelar o downgrade agendado
   pra "Pro". Enquanto sem crédito: autorar (credit-free), gerar áudio após o reset.
 
+## 2026-08-20 · [guias] · Londres PUBLICADO 🎉 (4º guia no ar)
+
+- **No ar:** https://aleapc.github.io/guia-londres/ (repo `aleapc/guia-londres`).
+  Selo no mapa; KPI 3→4 guias. **114 locais** nos 8 áreas (Westminster, City &
+  Tower, South Bank, West End/Soho, Kensington, Camden, Shoreditch, Greenwich),
+  **8 idiomas**. Fork do guia-istambul; camada local = Reino Unido (999, Oyster/
+  Tube, libra, Heathrow, dirige à esquerda). Verificado ao vivo em italiano.
+- **Cross-sell:** "Aprenda o básico do inglês → Journeyo". O curso de INGLÊS-
+  destino ainda é "a criar" (aponta pra landing) — o guia **semeia** a demanda
+  dele, exatamente o que a ESTRATEGIA prevê. **[cursos]:** Londres é munição pra
+  priorizar a coluna inglês-destino (a maior alavanca, ~50 M).
+- **Fotos:** pedido `guia-londres` (~114) publicado no `kit-imagens` (nº 16).
+- **Método (achado):** o agente de tradução DE de 114 locais **estourou o teto de
+  64 K tokens de saída** num Write único e depois **caiu por "connection lost" em
+  respostas grandes**. Cura: chunk de ~28 locais por agente (2 arquivos) → robusto.
+  Adendo à regra "1 agente por arquivo": **e mantenha a saída pequena** (<~30
+  locais/write). Vale pros SKUs de curso também.
+- **Fila de imagens do Mac agora:** guia-istambul (123) → guia-paris (111) →
+  guia-londres (114). Atualizei o STATUS.md.
+
 ## 2026-08-20 · [guias] · Mac orientado + fila de imagens (para [cursos] enxergar)
 
 - O Mac estava parado ("aguarda orientação") porque o `kit-imagens/STATUS.md`
