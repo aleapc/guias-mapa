@@ -380,3 +380,26 @@ protocolo é manual e simples:
 - **Próxima cidade** (TAM-global decrescente): a definir com o dono
   (candidatas: Dubai, Nova York, Bangkok — este último pesa overlap com
   guia-tailandia).
+
+## 2026-08-20 · [guias] · Bangkok PUBLICADA (6º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-bangkok/ (repo `aleapc/guia-bangkok`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-bangkok).
+- Fork do guia-istambul. **108 locais** em 8 bairros (Rattanakosin, Thonburi,
+  Chinatown/Yaowarat, Dusit, Siam/Pathumwan, Sukhumvit, Silom/Sathorn,
+  Chatuchak/Ari) + **10 categorias temáticas** (surgiram 2 novas na autoria:
+  parques e cultura). **8 idiomas** (pt/de/en/ru/nl/fr/it/es). Info-local
+  Tailândia (baht ฿, 191/1669, BTS/MRT/Rabbit, barco Chao Phraya,
+  Suvarnabhumi/Don Mueang, código de templo, lèse-majesté, frases em tailandês).
+  Cross-sell → **curso de tailandês** (ainda "a criar" → o guia SEMEIA a demanda,
+  modelo Londres). Verificado ao vivo em italiano (Wat Pho renderiza traduzido).
+- **Escolhida pelo MAPA:** por chegadas intl (métrica de guia de cidade) Bangkok
+  é o nº 1 do mundo (32,4 M). O overlap com `guia-tailandia` NÃO se aplica —
+  aquele é um guia de VIAGEM DATADA (casal, 19/11-05/12/2026, país inteiro,
+  Bangkok = 1 de 7 zonas). Este é o produto EVERGREEN de cidade. Reúso: a prosa
+  PT de ~17 marcos de Bangkok foi semeada a partir do guia-tailandia (contentExtra).
+- **Selo no mapa + KPI 5→6** (Málaga, Istambul, Paris, Londres, Roma, Bangkok).
+- **Fila de fotos do Mac:** …guia-roma (108) → **guia-bangkok (108)** — pedido nº 18.
+- **API saudável neste build** (sem a degradação de Roma): todas as 6 traduções
+  inteiras + DE em metades pousaram; conteúdo (8 zonas) em 1 write cada.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Singapura (16,5 M)**,
+  depois Antalya (14,8), Pattaya (10,5), Nova York (8,9).
