@@ -107,7 +107,7 @@ const PAISES = [
     {n:"San Sebastián", v:1.03, mt:"hóspedes", c:"a"}, {n:"Toledo", v:1.0, mt:"região", c:"b"}, {n:"Marbella", v:0.72, mt:"hóspedes", c:"a"}
   ]},
   { pais:"Türkiye", flag:"🇹🇷", status:"live", curso:"curso no ar", cnote:"Estatística é por PROVÍNCIA. Bodrum/Fethiye/Marmaris dentro de Muğla; Side dentro de Antalya. Dados 2023.", dest:[
-    {n:"Istambul", v:17.4, mt:"chegadas intl", c:"a"}, {n:"Antalya", v:14.8, mt:"chegadas intl", c:"a", t:"PROVÍNCIA (Side, Alanya, Kemer)"},
+    {n:"Istambul", v:17.4, mt:"chegadas intl", c:"a", guia:true}, {n:"Antalya", v:14.8, mt:"chegadas intl", c:"a", t:"PROVÍNCIA (Side, Alanya, Kemer)"},
     {n:"Capadócia", v:4.83, mt:"visitantes", c:"m", t:"região, incl. doméstico"}, {n:"Edirne", v:4.7, mt:"chegadas intl", c:"b", t:"fronteira: trânsito, não lazer"},
     {n:"Aydın (Kuşadası)", v:4.2, mt:"visitantes", c:"m"}, {n:"Muğla (Bodrum/Fethiye)", v:3.3, mt:"chegadas intl", c:"a", t:"PROVÍNCIA"},
     {n:"Pamukkale", v:2.2, mt:"sítio", c:"m"}, {n:"Éfeso / Selçuk", v:2.2, mt:"sítio", c:"m"},
@@ -234,7 +234,7 @@ document.getElementById("kpis").innerHTML = `
   <div class="kpi"><div class="n">${totalDest}</div><div class="l">destinos catalogados</div></div>
   <div class="kpi"><div class="n">${nLive}</div><div class="l">países com curso no ar</div></div>
   <div class="kpi"><div class="n">${nCriar}</div><div class="l">países com curso a criar (inclui inglês)</div></div>
-  <div class="kpi"><div class="n">1</div><div class="l">guia já no ar (Málaga)</div></div>
+  <div class="kpi"><div class="n">2</div><div class="l">guias já no ar (Málaga, Istambul)</div></div>
 `;
 
 function renderCountry(p){
