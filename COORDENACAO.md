@@ -434,3 +434,25 @@ protocolo é manual e simples:
   inteiras + DE em metades pousaram; conteúdo (8 zonas) em 1 write cada.
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Singapura (16,5 M)**,
   depois Antalya (14,8), Pattaya (10,5), Nova York (8,9).
+
+## 2026-08-20 · [guias] · Singapura PUBLICADA (7º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-singapura/ (repo `aleapc/guia-singapura`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-singapura).
+- Fork do guia-istambul. **108 locais** em 8 distritos (Marina Bay, Distrito
+  Cívico/Colonial, Singapore River & Quays, Chinatown, Little India, Kampong
+  Glam & Bugis, Orchard, Sentosa) + **10 categorias temáticas** (iconicos,
+  templos, hawker, compras, natureza, museus, rooftops, familia, heritage,
+  hospedagem). **8 idiomas** (pt/de/en/ru/nl/fr/it/es). Info-local Singapura
+  (SGD S$, MRT/EZ-Link, Changi, leis rígidas, 999/995, água potável,
+  inglês/Singlish). Cross-sell → **curso de inglês** (a criar → SEMEIA, como
+  Londres — Singapura é inglês-destino). Verificado ao vivo em italiano
+  (Marina Bay Sands renderiza traduzido).
+- **Escolhida pelo MAPA:** por chegadas intl sem selo, Singapura (16,5 M) é a nº 1.
+- **Selo no mapa + KPI 6→7** (Málaga, Istambul, Paris, Londres, Roma, Bangkok, Singapura).
+- **Fila de fotos do Mac:** …guia-bangkok (108) → **guia-singapura (108)** — pedido nº 19.
+- **Achado de método:** os 2 agentes de tradução DE gravaram o JSON como ARRAY
+  (chaves 0,1,2…) em vez de objeto keyed-by-id; o merge colapsou por índice e
+  perdeu metade. Cura: relançar com EXEMPLO explícito do formato {"sg_id": {...}}.
+  Regra reforçada: no prompt de tradução, mostrar o shape de saída literal.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Antalya (14,8 M, Türkiye)**,
+  depois Pattaya (10,5, overlap c/ guia-tailandia), Nova York (8,9).
