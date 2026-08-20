@@ -16,6 +16,31 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · KO/ZH→Japão: texto fechado, validado e no GitHub
+- **Autoria concluída** dos dois SKUs em produção do mapa: `curso-japao-ko` e
+  `curso-japao-zh` (36 episódios + 36 quizzes + moldes.json + bolso.json +
+  chrome/casca cada, 75 arquivos por SKU). Scaffold clonado de `curso-japao`
+  (EN→Japão), reusando 100% a camada-alvo japonesa (áudio + arte); só a
+  camada de guia (coreano/mandarim) foi traduzida — modelo Sonnet 5 Medium
+  + frota, confirmando a regra de derivação (sem Opus, sem pesquisa
+  contrastiva fonética profunda — esse nível só existe no exemplar alemão).
+- **Validado:** `npm run estrutura` e `npm run casca` verdes nos dois.
+  Corrigido um resíduo de clone que os dois carregavam (chrome/`<title>`/meta-
+  description ainda em inglês — "Japan survival Japanese" — apesar do
+  conteúdo já estar traduzido; ver [[kit-de-bordo-residuo-de-clone]]).
+- **No GitHub:** repos `aleapc/curso-japao-ko` e `aleapc/curso-japao-zh`
+  criados, branch `main` com o código-fonte, push feito.
+- **Falta para publicar:** voz-guia (coreana/mandarim — aguarda o reset de
+  créditos ElevenLabs em 3/set) e rodar `deploy.sh` (gh-pages). Status no
+  mapa continua "em obra" (◐), não "no ar" — texto pronto ≠ SKU publicado.
+- **Achado de processo:** a autoria em frota gerou bastante trabalho
+  duplicado (vários sub-agentes traduzindo os mesmos arquivos em paralelo,
+  detectado via "arquivo modificado no disco desde a última leitura") — não
+  causou dano (conteúdo final correto nos dois casos), mas gastou mais
+  tokens que o necessário. Um orquestrador ficou preso num loop achando que
+  faltava trabalho já concluído; precisou de verificação manual externa
+  para destravar.
+
 ## 2026-08-20 · [cursos] · Saneamento: 20 SKUs sem git local, código-fonte nunca versionado
 - **Achado (antes de autorar KO/ZH→Japão):** 20 pastas em
   `kit-de-bordo-worktrees/` (toda a frota derivada a partir de ~11/ago —
