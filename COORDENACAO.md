@@ -473,3 +473,25 @@ protocolo é manual e simples:
   Regra reforçada: no prompt de tradução, mostrar o shape de saída literal.
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Antalya (14,8 M, Türkiye)**,
   depois Pattaya (10,5, overlap c/ guia-tailandia), Nova York (8,9).
+
+## 2026-08-20 · [guias] · Antalya PUBLICADA (8º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-antalya/ (repo `aleapc/guia-antalya`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-antalya).
+- Fork do guia-istambul. **107 locais** em 8 ÁREAS da Riviera Turca (Kaleiçi,
+  Centro & museus, Konyaaltı, Lara & Düden, Sítios antigos, Kemer & Olympos,
+  Side & Manavgat, Belek & Köprülü) + **10 categorias temáticas** (praias,
+  ruinas, historia, natureza, familia, gastronomia, noite, compras, passeios,
+  hospedagem). **8 idiomas** (pt/de/en/ru/nl/fr/it/es). Info-local Turquia/Antalya
+  (lira ₺, 112, AntalyaKart/bonde AntRay, AYT, dolmuş, all-inclusive). Cross-sell
+  → **curso de turco** (curso-turquia JÁ existe em en/de/ru → RECÍPROCA, não semeia).
+  Verificado ao vivo em italiano (Aspendos renderiza traduzido).
+- **Modelo adaptado:** Antalya é REGIÃO de resort, não metrópole densa — as zonas
+  são áreas geográficas (cidade velha + praias + sítios antigos + vilas de resort),
+  não bairros. Funcionou bem.
+- **Escolhida pelo MAPA:** nº 1 em chegadas intl sem selo (14,8 M, província).
+- **Selo no mapa + KPI 7→8** (…Bangkok, Singapura, Antalya).
+- **Reúso:** por ser na Turquia (como Istambul), a info-local herdou os fatos do
+  PAÍS (lira, 112, turco) — o agente só trocou as especificidades de cidade.
+- **Fila de fotos do Mac:** …guia-singapura (108) → **guia-antalya (107)** — pedido nº 20.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Pattaya (10,5 M, Tailândia**
+  — pesar overlap com guia-tailandia**)**, depois Nova York (8,9), Las Vegas (4,74).
