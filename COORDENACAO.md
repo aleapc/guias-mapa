@@ -16,6 +16,37 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · curso-reinounido-fr: abre a sub-coluna inglês BRITÂNICO
+- **Autoria concluída**: França→Reino Unido (3,6 M), a maior célula a criar
+  depois das já abertas. Scaffold clonado do `curso-eua-es` (reúso da camada-
+  alvo inglesa), guia re-derivada pro FRANCÊS, alvo adaptado de americano
+  pra **britânico** (vozes Alice/George, vocabulário the bill/loo/queue/
+  takeaway/lift, nunca "the subway" — no UK é passagem de pedestre).
+- **Fatos-âncora (fonte)**: trânsito pela esquerda + "LOOK RIGHT" pintado no
+  asfalto; contactless/TfL (cartão estrangeiro FUNCIONA, ao contrário do
+  PINNEN holandês); libra≠euro; pub (pedir e pagar no balcão); service
+  charge discricionário ~12,5% (contraste com o *service compris* francês);
+  **correção real que a pesquisa trouxe**: o turista francês usa o PRÓPRIO
+  cartão CEAM/EHIC, não um "GHIC" (esse é do residente britânico).
+- **Modelo**: Fase 1 **Opus 5 · Alto** (1ª vez usando o Opus 5 nesta sessão,
+  antes era 4.8) + Fase 2 Sonnet 5 · Médio + frota (4 agentes). Marca:
+  «Cheers!». Termo do método: «la formule».
+- **Consequência estratégica**: as próximas células →Reino Unido (Alemanha
+  3,3 M, Espanha 2,6 M, Itália 1,9 M, Países Baixos 2,0 M) viram derivações
+  baratas — reusam a camada-alvo britânica que este SKU acabou de criar.
+- **Portão estendido**: G6 (anti-estereótipo) não tinha NENHUM gentílico
+  britânico na regra francesa — "les Britanniques sont réservés" passava
+  verde. Estendido + testado (10/10, incl. distinguir "à l'anglaise" [modo,
+  dispara] de "passer à l'anglais" [trocar de língua, não dispara — 3 falsos-
+  positivos reais achados no curso-espanha-fr publicado, corrigidos).
+- **Achado catalog-wide, corrigido parcialmente**: o fallback de voz do
+  navegador (`speech.ts`) estava hard-coded pra espanhol em praticamente
+  todo o catálogo — confirmado em SKUs JÁ PUBLICADOS (curso-alemanha-en,
+  curso-turquia-en). Corrigido nos 5 SKUs desta sessão (parametrizado por
+  `targetLang`); resto do catálogo fica como tarefa separada — ver memória
+  `kit-de-bordo-fallback-voz-hardcoded`.
+- **Validado**: PASSA, zero erro. GitHub: `github.com/aleapc/curso-reinounido-fr`.
+
 ## 2026-08-20 · [cursos] · China: DESPRIORIZADA como origem, mantida como destino
 - **Decisão do dono.** Motivo de DISTRIBUIÇÃO, não só de dado: vender app
   PARA chinês é travado. **Google Play não existe na China** (só lojas locais
