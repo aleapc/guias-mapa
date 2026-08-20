@@ -537,3 +537,22 @@ protocolo é manual e simples:
 - **Fila de fotos do Mac:** …guia-singapura (108) → **guia-antalya (107)** — pedido nº 20.
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Pattaya (10,5 M, Tailândia**
   — pesar overlap com guia-tailandia**)**, depois Nova York (8,9), Las Vegas (4,74).
+
+## 2026-08-20 · [guias] · Pattaya PUBLICADA (9º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-pattaya/ (repo `aleapc/guia-pattaya`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-pattaya).
+- Fork do guia-istambul. **108 locais** em 8 áreas (Praia de Pattaya, South &
+  Walking Street, Naklua, Pratamnak, Jomtien, Koh Larn & ilhas, Parques & museus,
+  Arredores) + **10 categorias temáticas**. **8 idiomas** (pt/de/en/ru/nl/fr/it/es).
+  Info-local Tailândia (baht ฿, songthaew/baht bus, U-Tapao UTP + Suvarnabhumi BKK,
+  191/1669, água engarrafada, lèse-majesté, código de templo). Cross-sell →
+  **curso de tailandês** (a criar → SEMEIA, modelo Londres/Bangkok/Singapura).
+  Verificado ao vivo em italiano (Santuário da Verdade renderiza traduzido).
+- **Escolhida pelo MAPA:** nº 1 em chegadas intl sem selo (10,5 M). SEM overlap real
+  com guia-tailandia (aquele cobre Bangkok/Chiang Mai/ilhas do sul, NÃO Pattaya).
+- **Selo no mapa + KPI 8→9** (…Singapura, Antalya, Pattaya).
+- **Fila de fotos do Mac:** …guia-antalya (107) → **guia-pattaya (108)** — pedido nº 21.
+- **Nota:** conteúdo limpo de primeira (categorias e ids válidos sem remap/dedup —
+  o playbook está maduro). Cidade-resort, mesmo modelo de zonas-área da Antalya.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Nova York (8,9 M)** —
+  inglês-destino, semeia curso de inglês; depois Las Vegas (4,74), Miami (4,4).
