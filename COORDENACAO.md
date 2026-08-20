@@ -612,3 +612,23 @@ protocolo é manual e simples:
   entre os dois modelos sem atrito. Conteúdo limpo de primeira de novo.
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Las Vegas (4,74 M)**,
   depois Edirne (4,7, Türkiye), Miami (4,4), Los Angeles (3,6).
+
+## 2026-08-20 · [guias] · Las Vegas PUBLICADA (11º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-lasvegas/ (repo `aleapc/guia-lasvegas`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-lasvegas).
+- Fork do guia-istambul. **108 locais** em 8 áreas (Strip Sul/Central/Norte,
+  Downtown & Fremont, Fora da Strip/Chinatown, Deserto & natureza, Hoover & Lago
+  Mead, Grand Canyon & bate-voltas) + **10 categorias temáticas** (cassinos, shows,
+  iconicos, gastronomia, vidanoturna, compras, miradouros, familia, aventura,
+  hospedagem). **8 idiomas** (pt/de/en/ru/nl/fr/it/es). Info-local EUA/Nevada
+  (US$, resort fee, monorail/Deuce RTC, aeroporto LAS, 911, 21+, gorjeta 15-20%).
+  Cross-sell → **curso de inglês** (a criar → SEMEIA). Verificado ao vivo em
+  italiano (Fontes do Bellagio traduzidas).
+- **Escolhida pelo MAPA:** nº 1 em chegadas intl sem selo (4,74 M).
+- **Selo no mapa + KPI 10→11** (…Nova York, Las Vegas).
+- **Modelo híbrido:** cidade compacta (a Strip em 3 trechos + Downtown + fora) +
+  natureza/bate-voltas do deserto (Red Rock, Hoover, Grand Canyon como zonas).
+  O playbook flexiona bem. Conteúdo limpo de primeira de novo.
+- **Fila de fotos do Mac:** …guia-novayork (108) → **guia-lasvegas (108)** — pedido nº 23.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Edirne (4,7 M, Türkiye)**,
+  depois Miami (4,4), Los Angeles (3,6), Orlando (3,5), Sydney (3,2).
