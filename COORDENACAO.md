@@ -16,6 +16,27 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · Onda EUA: 6 derivações disparadas (DE/FR/KO/ZH/IT/ES-peninsular)
+- Continuação da linha de derivação, agora colhendo a coluna EUA aberta pelo
+  `curso-eua-es`. 6 SKUs: `curso-eua-de` (1,995 M), `-fr` (1,706 M), `-ko`
+  (1,7 M), `-zh` (1,626 M), `-it` (1,124 M), `-esp` (0,897 M) = 9,05 M.
+- **Achado de nomenclatura**: `curso-eua-es` já existe e é o corredor
+  MÉXICO→EUA (vozes FernandaMX/CarlosMX). Espanha peninsular→EUA é um
+  comprador diferente (vozes Carmen/Emilio) — sem precedente no catálogo pra
+  essa distinção. Batizei `curso-eua-esp` (não `-es`, que colidiria). Vale
+  como convenção pra qualquer destino futuro com os dois corredores espanhóis.
+- **Achado de escopo (2 células NÃO disparadas)**: Brasil→EUA (1,91 M) e
+  Japão→EUA (1,844 M) ficaram de fora — **não existe voz-guia PT-BR nem
+  japonesa como COMPRADOR em nenhum SKU do catálogo** (só como destino:
+  curso-portugal-*, curso-japao). Não inventei voiceId. Ficam pendentes de
+  casting novo (buscar/ouvir vozes no ElevenLabs) antes de poderem entrar.
+- **Aplicando a lição da onda Reino Unido**: instruí os 6 agentes a cobrir
+  `/routes/sync` E o bloco de sincronizar da home explicitamente na lista de
+  casca, para não repetir o ponto cego encontrado 3× na onda anterior.
+- Repos criados: `github.com/aleapc/curso-eua-{de,fr,ko,zh,it,esp}`.
+- Modelo: Sonnet 5 · Médio, 1 agente por SKU, cada um autorizado a fechar
+  sozinho. Em andamento — reportar quando os 6 fecharem.
+
 ## 2026-08-20 · [cursos] · Onda Reino Unido: 5 derivações disparadas (DE/ES/NL/IT/ZH)
 - **Linha de derivação**, confirmada com o dono: agora que EUA/Reino
   Unido/Países Baixos estão abertos como destino, as próximas células mais
