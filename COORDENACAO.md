@@ -35,7 +35,42 @@ protocolo é manual e simples:
   casca, para não repetir o ponto cego encontrado 3× na onda anterior.
 - Repos criados: `github.com/aleapc/curso-eua-{de,fr,ko,zh,it,esp}`.
 - Modelo: Sonnet 5 · Médio, 1 agente por SKU, cada um autorizado a fechar
-  sozinho. Em andamento — reportar quando os 6 fecharem.
+  sozinho.
+- **FECHADO 2026-08-20, mesmo dia.** 6/6 validados PASSA, zero erro,
+  publicados. Termo do método: DE «Baustein», FR «la formule», KO «블록»
+  (block — confirmado consistente com curso-portugal-ko/curso-espanha-ko),
+  ZH «框架», IT «lo stampo», ESP «la fórmula».
+- **Achados factuais recorrentes**: 3 agentes (DE/FR/KO) acharam e
+  corrigiram sozinhos o mesmo erro herdado do México — visto B1/B2 trocado
+  por ESTA/Visa Waiver Program, já que Alemanha/França/Coreia são elegíveis
+  (o México não é). ES-peninsular trocou visto mexicano por ESTA da UE
+  também, e reescreveu todo o registro de mexicano pra peninsular (vosotros,
+  léxico: coche/ordenador/billete/camarero/móvil/cola).
+- **Bugs de portão que os PRÓPRIOS agentes acharam e corrigiram** (3×,
+  replicando precedentes já publicados sem eu precisar intervir): o mesmo
+  `\b`-não-fecha-fronteira-em-CJK/Hangul do G15, achado independentemente
+  por DE, ZH e KO, cada um copiando o fix de um SKU-irmão já corrigido.
+- **Achado de nomenclatura, corrigido em escala**: `curso-eua-esp` (3 letras)
+  quebrava o REGEX INTEIRO do `valida-esqueleto.mjs` (que só aceitava
+  sufixo de 2 letras) — não só o pedaço da língua, o portão inteiro
+  desligava silenciosamente. Corrigido (regex 2-4 letras + tabela de
+  desambiguação esp→es) e propagado pros 12 SKUs publicados nesta sessão
+  (incl. reinounido-*/holanda-de). De passagem, 'eua'/'reinounido'/
+  'holanda'/'japao' nunca tinham entrado no mapa `LINGUA_DO_DESTINO` do
+  mesmo script — o check 2 (destino×targetLang) estava mudo pra essas 4
+  colunas inteiras desde sempre; corrigido junto.
+- **`curso-eua-de` precisou de 2 rodadas extras minhas** depois do agente:
+  G4 (30/36 episódios acima do teto de chars/clipe — agente próprio corrigiu
+  depois de um follow-up) + 2 G15 de substituição de molde telegrafada
+  ("jetzt mit" anunciando a troca) que sobraram — corrigidos por mim.
+- **Dívida comum sinalizada por todos os 6 agentes**: `consulta.json`
+  (5218 linhas) do sistema de busca "Kit" está com conteúdo do curso-espanha
+  original (`sku: "EN → Espanha"`), herdado e idêntico em `curso-eua-es` e
+  em toda a coluna — não bloqueante (G8 só avisa), mas real. Fica pendente.
+- **9,05 M movidos de "a criar" para "em obra"** no mapa. **Brasil→EUA
+  (1,91 M) e Japão→EUA (1,84 M) NÃO disparados** — sem voz-guia PT-BR nem
+  japonesa como comprador em nenhum SKU do catálogo; pendente de casting
+  novo antes de poderem entrar (não inventei voiceId).
 
 ## 2026-08-20 · [cursos] · Onda Reino Unido: 5 derivações disparadas (DE/ES/NL/IT/ZH)
 - **Linha de derivação**, confirmada com o dono: agora que EUA/Reino
