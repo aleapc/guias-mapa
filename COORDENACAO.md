@@ -120,3 +120,20 @@ protocolo é manual e simples:
   kit-de-bordo-worktrees/curso-eua-es/docs/FUNDACAO.md e na memória
   curso-eua-fundacao. Falta scaffold + 36 episódios (credit-free até 3/set).
 - Sem impacto direto na sessão de guias — registro pra visibilidade.
+
+## 2026-08-20 · [cursos] · CORREÇÃO: México desinflado; curso-eua-es reordenado
+- **Achado com fonte (US NTTO/I-94 2024 + Banxico 2023):** o corredor
+  México→EUA NÃO é 17 M de turista-comprador. Os 52 M de saídas do México =
+  16 M overnight (quase tudo p/ EUA) + 36 M fronteiriços same-day (inglês alto,
+  fora do encaixe). Dos que ficam nos EUA: **3,5 M de avião** (lazer real) +
+  13,4 M terrestres (fronteiriços, inglês alto). **TAM honesto de survival-EN
+  ≈ 3,5 M, não 17 M.** A entrada de 2026-08-19 (linha 100) está corrigida.
+- **Consequência de priorização:** a coluna inglês cai de ≈50 M → **≈34 M**
+  (EUA 17,3 + Reino Unido 16,3). Segue sendo a maior coluna-destino, mas o
+  corredor-âncora era inflado. O **cluster KO/ZH→Japão (15,8 M, dado limpo,
+  áudio-alvo japonês JÁ pronto)** é agora o próximo SKU mais valioso E mais
+  barato — acima de continuar o curso-eua-es (que precisa de camada-alvo
+  inglesa NOVA). Decisão de qual autorar primeiro ainda com o dono.
+- **Mapa dos cursos atualizado e no ar:** México adicionado como 16ª origem
+  (matriz 16×17); curso-eua-es marcado "em obra" (◐); KPIs recalibrados
+  (59,5% no ar = 223,5 de 375,8 M; universo cresceu +165 M com a fronteira).
