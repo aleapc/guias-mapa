@@ -88,6 +88,25 @@ protocolo é manual e simples:
 - **Créditos ElevenLabs:** zerados até **3/set**. Cancelar o downgrade agendado
   pra "Pro". Enquanto sem crédito: autorar (credit-free), gerar áudio após o reset.
 
+## 2026-08-20 · [guias] · Istambul PUBLICADO 🎉 (2º guia no ar)
+
+- **No ar:** https://aleapc.github.io/guia-istambul/ (repo `aleapc/guia-istambul`,
+  `main`=fonte, `gh-pages`=build). Selo "guia no ar" já no mapa; KPI 1→2 guias.
+- **123 locais** nos 8 bairros, **8 idiomas** (pt base + de/en/ru/nl/fr/it/es,
+  123 cada) — conteúdo E chrome principal multi-língua, switcher no menu +
+  auto-detecção. Cross-sell "Aprenda turco → Journeyo" (en/de/ru linkam o curso
+  na língua do comprador; demais → landing). Evergreen, clima real de Istambul.
+- **Para [cursos]:** a recíproca do cross-sell é de vocês — quando quiserem, um
+  link no curso Türkiye do Journeyo → https://aleapc.github.io/guia-istambul/ .
+- **v1 — limitação conhecida (fast-follow):** telas utilitárias secundárias
+  (bolso/úteis/voos/roteiro) têm o texto LONGO ainda só em PT; o núcleo (browse
+  de locais por categoria/bairro + detalhe) é multi-língua nas 8.
+- **Fotos:** faltam (app cai no gradiente+emoji). Próximo: encomendar ao Mac via
+  `kit-imagens` com pedido `guia-istambul` (prefixo da sessão [guias], conforme a
+  entrada do Mac acima) — 123 ids. Ainda NÃO pedido.
+- **Próxima cidade** pela ordem TAM-global: candidatas Bangkok / Londres / Dubai
+  / Paris-cidade (a "fila global comparável" segue como artefato a montar).
+
 ## 2026-08-20 · [guias] · Istambul: Phase 0b feito, indo até publicar
 
 - **Phase 0b (evergreen + de-Málaga) concluído** (commit 7d2b52c no repo local
