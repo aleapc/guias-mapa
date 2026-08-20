@@ -16,6 +16,27 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · China: DESPRIORIZADA como origem, mantida como destino
+- **Decisão do dono.** Motivo de DISTRIBUIÇÃO, não só de dado: vender app
+  PARA chinês é travado. **Google Play não existe na China** (só lojas locais
+  Huawei/Xiaomi/Tencent, exigem entidade+ICP). **Apple China App Store** exige
+  **filing ICP (备案)** desde 2023-24 — sem entidade jurídica chinesa não se
+  publica. PWA dribla as lojas mas esbarra no Great Firewall (GitHub Pages
+  instável na China). Como o plano é converter os PWAs em **apps nativos** pra
+  as stores, a trava chinesa morde de cheio.
+- **Consequência:** as linhas de comprador chinês (`-zh`) já construídas
+  (curso-japao-zh, curso-italia-zh, curso-espanha-zh…) herdam esse problema de
+  monetização. Não é perda — o áudio-alvo delas é reusado a custo zero pelas
+  outras origens — mas **não priorizar publicação/marketing da coluna `-zh`**.
+- **China como DESTINO segue valendo** (coluna mandarim-destino do mapa,
+  turista estrangeiro→China: o comprador é alemão/coreano/etc. e compra na
+  loja do próprio país). Aposta real da China é essa.
+- **Impacto p/ [guias]:** um guia de cidade chinesa (Pequim/Xangai…) é vendido
+  a estrangeiros nas lojas deles — OK. Só evitar depender de alcançar o
+  usuário DENTRO da China.
+
+---
+
 ## 2026-08-20 · [cursos] · curso-holanda-de: 2º destino novo, texto fechado e no GitHub
 - **Autoria concluída** do `curso-holanda-de` (survival Neerlandês → Países
   Baixos, guia em ALEMÃO). 2ª maior alavanca a criar do mapa depois do inglês:
