@@ -85,7 +85,7 @@
 // dest: n nome, v milhões (null=sem dado), mt badge métrica, c a/m/b confiança, t nota, guia=já tem guia
 const PAISES = [
   { pais:"França", flag:"🇫🇷", status:"live", curso:"curso no ar", cnote:"França mede pouco por cidade: muito é pernoite, sítio ou região. Paris aqui é a região inteira. Montréal e Québec (Canadá) também entram no francês.", dest:[
-    {n:"Paris", v:48.7, mt:"região", c:"m", t:"Île-de-France (inclui Versalhes+Disney); cidade ≈ 18,3 M chegadas intl"},
+    {n:"Paris", v:48.7, mt:"região", c:"m", guia:true, t:"Île-de-France (inclui Versalhes+Disney); cidade ≈ 18,3 M chegadas intl"},
     {n:"Lyon", v:9.56, mt:"pernoites", c:"m"}, {n:"Versalhes", v:8.4, mt:"sítio", c:"a"},
     {n:"Bordeaux", v:7.2, mt:"pernoites", c:"m"}, {n:"Toulouse", v:5.0, mt:"pernoites", c:"m"},
     {n:"Saint-Tropez", v:5.0, mt:"estimativa", c:"b", t:"Golfe inteiro; a vila é menor"},
@@ -234,7 +234,7 @@ document.getElementById("kpis").innerHTML = `
   <div class="kpi"><div class="n">${totalDest}</div><div class="l">destinos catalogados</div></div>
   <div class="kpi"><div class="n">${nLive}</div><div class="l">países com curso no ar</div></div>
   <div class="kpi"><div class="n">${nCriar}</div><div class="l">países com curso a criar (inclui inglês)</div></div>
-  <div class="kpi"><div class="n">2</div><div class="l">guias já no ar (Málaga, Istambul)</div></div>
+  <div class="kpi"><div class="n">3</div><div class="l">guias já no ar (Málaga, Istambul, Paris)</div></div>
 `;
 
 function renderCountry(p){

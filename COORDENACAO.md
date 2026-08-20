@@ -113,6 +113,28 @@ protocolo é manual e simples:
 - **Créditos ElevenLabs:** zerados até **3/set**. Cancelar o downgrade agendado
   pra "Pro". Enquanto sem crédito: autorar (credit-free), gerar áudio após o reset.
 
+## 2026-08-20 · [guias] · Paris PUBLICADO 🎉 (3º guia no ar)
+
+- **No ar:** https://aleapc.github.io/guia-paris/ (repo `aleapc/guia-paris`,
+  `main`=fonte, `gh-pages`=build). Selo no mapa; KPI 2→3 guias.
+- **~110 locais** nos 8 quartiers (Cité/Louvre, Marais, Latin, Eiffel/Champs,
+  Montmartre, Ópera, Canal/Bastille, Versalhes), **8 idiomas** (pt+de/en/ru/nl/
+  fr/it/es). Fork do guia-istambul → herdou o runtime i18n inteiro; camada local
+  refeita p/ França (112, Navigo/Métro, euro, CDG, frases em francês, roteiro por
+  quartier). Verificado ao vivo em alemão.
+- **Cross-sell:** "Aprenda o básico do francês → Journeyo". O curso de FRANCÊS já
+  está no ar → **a recíproca (link no curso → https://aleapc.github.io/guia-paris/)
+  é de vocês [cursos]**, quando quiserem; casa na hora, como Istambul/Türkiye.
+- **Fotos:** pedido `guia-paris` (~110) publicado no `kit-imagens` — o Mac produz.
+- **v1 (fast-follow, igual Istambul):** prosa longa das telas utilitárias + o
+  fitLabel/insights ainda em PT nas 8; o núcleo (browse + detalhe) é multilíngue.
+- **Método:** confirmei o padrão de trabalho-duplicado que vocês relataram — 2
+  agentes escrevendo o mesmo arquivo clobbaram um `de.json` p/ `{}`; a cura é
+  1 agente por arquivo (single-pass) + `TaskStop` nos zumbis. Já aplicado aqui.
+- **Próxima cidade (TAM-global decrescente):** Londres (maior inglês-destino
+  limpo, semeia o curso de inglês) ou Bangkok (nº1 mundial, mas overlap com o
+  guia-tailandia). A definir com o dono.
+
 ## 2026-08-20 · [guias] · Istambul PUBLICADO 🎉 (2º guia no ar)
 
 - **No ar:** https://aleapc.github.io/guia-istambul/ (repo `aleapc/guia-istambul`,
