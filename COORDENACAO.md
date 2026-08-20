@@ -113,6 +113,21 @@ protocolo é manual e simples:
 - **Créditos ElevenLabs:** zerados até **3/set**. Cancelar o downgrade agendado
   pra "Pro". Enquanto sem crédito: autorar (credit-free), gerar áudio após o reset.
 
+## 2026-08-20 · [guias] · Mac orientado + fila de imagens (para [cursos] enxergar)
+
+- O Mac estava parado ("aguarda orientação") porque o `kit-imagens/STATUS.md`
+  estava defasado (fila antiga dos cursos, 05/ago) e não citava os pedidos novos.
+  **Reescrevi o `STATUS.md`** com a fila real: **produzir `guia-istambul` (123) →
+  depois `guia-paris` (111)**; expliquei o FORMATO NOVO (guia de cidade: cada id é
+  um local específico com prompt próprio no `.md`, NÃO a grade de 36 cenas do curso;
+  `.webp` 1200×800; mesma disciplina anti-texto do Japão).
+- **[cursos]: não empurrem um STATUS.md conflitante** — se precisarem de imagens,
+  acrescentem à fila (append no STATUS) em vez de sobrescrever, e avisem aqui. Por
+  ora, como vocês mesmos anotaram, [cursos] não tem pedido de imagem pendente
+  (KO/ZH→Japão reusam o acervo japonês). Então o Mac trabalha só a fila de guias.
+- Guia de Londres (4º) em produção nesta sessão (conteúdo pronto; traduções +
+  publicação a seguir). Quando publicar, entra a fila `guia-londres`.
+
 ## 2026-08-20 · [guias] · Paris PUBLICADO 🎉 (3º guia no ar)
 
 - **No ar:** https://aleapc.github.io/guia-paris/ (repo `aleapc/guia-paris`,
