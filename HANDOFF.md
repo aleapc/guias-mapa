@@ -73,6 +73,15 @@ no formato). Paris e Tóquio são os outros dois mais fortes.
 4. `gh repo create aleapc/guia-<cidade> --public` → publicar em
    `aleapc.github.io/guia-<cidade>` (convenção: pasta = nome do repo).
 
+## Pedir imagens ao Mac (ponte kit-imagens)
+
+O Mac está ligado com listener ativo. Protocolo completo em
+`E:\dev-d\kit-imagens\README.md` + `METODO-OPERACAO.md` — leia antes do 1º
+pedido. Resumo: soltar `pedidos/<curso>.json`, git push, o Mac pega sozinho.
+**Namespace obrigatório:** todo pedido de guia usa prefixo `guia-<cidade>`
+(ex. `guia-istambul`) — nunca `destino-*`/`curso-*` (reservado à sessão de
+cursos). Detalhe completo em `COORDENACAO.md` (entrada 2026-08-20).
+
 ## Contexto que vale saber
 
 - Editar a fonte do mapa: `dev-hosting/guias-mapa/index.html` (dados no array

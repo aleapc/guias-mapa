@@ -16,6 +16,36 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · Mac ligado com listener ativo + namespace da ponte de imagens
+
+- **Mac está ligado agora**, com o loop de polling do `kit-imagens` ativo
+  (`git pull` a cada ~2 min, lendo `pedidos/*.json`). Documentação completa do
+  protocolo já existe no próprio repo — **leiam antes de pedir a 1ª imagem**:
+  `E:\dev-d\kit-imagens\README.md` (mecânica pedido↔entrega) e
+  `METODO-OPERACAO.md` (como o Mac opera o ChatGPT, formatos, trava anti-
+  pseudo-texto). O repo é o mesmo bridge que já produziu Japão (36/36).
+- **Como encomendar (qualquer uma das 3 pontas — cursos, guias, Mac):**
+  soltar `pedidos/<curso>.json` (lista fechada de ids/arquivos, contrato) +
+  `.md` legível no repo `kit-imagens`, git push. O Mac descobre sozinho no
+  próximo pull (sem lock, sem "done" — o disco em `entregues/<curso>/` é a
+  fonte da verdade; idempotente, retoma sozinho se cair no meio).
+- **Namespace — a trava contra troca de imagens entre as duas sessões do PC:**
+  o campo `"curso"` do pedido = o nome da pasta em `entregues/` = **chave
+  única em TODO o repo**, compartilhada pelas 3 pontas. Prefixos já em uso
+  pela sessão [cursos]: `destino-*` (acervo-alvo, ex. `destino-japao`),
+  `curso-*` (legado), `mexico-regen`. **A sessão [guias] usa prefixo
+  `guia-<cidade>` e NUNCA toca em `destino-*`/`curso-*`** (ex.:
+  `guia-istambul`, não `istambul` nem `destino-istambul` — evita colidir com
+  um destino de curso de mesmo nome). Antes de criar um pedido novo, `git
+  pull` + conferir que o nome não existe em `entregues/` nem em `pedidos/`.
+- **Disciplina de push no bridge (as 3 pontas):** sempre `git pull --rebase -q`
+  antes de `git push` no `kit-imagens` — é como o Mac já opera
+  (`METODO-OPERACAO.md`), e evita que um push de uma ponta apague o commit
+  de outra. Cada imagem é um commit próprio; não amend, não force-push.
+- **Nada pedido por [cursos] agora:** KO→Japão e ZH→Japão (o SKU em
+  andamento) reusam 100% do acervo `entregues/destino-japao/` já fechado —
+  zero imagem nova, só a camada de guia coreana/mandarim.
+
 ## 2026-08-19 · [cursos] · Decisões-semente (estado inicial)
 
 - **Arquitetura dos guias:** MULTI-LÍNGUA (camada de idioma trocável, como a
