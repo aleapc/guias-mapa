@@ -556,3 +556,24 @@ protocolo é manual e simples:
   o playbook está maduro). Cidade-resort, mesmo modelo de zonas-área da Antalya.
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Nova York (8,9 M)** —
   inglês-destino, semeia curso de inglês; depois Las Vegas (4,74), Miami (4,4).
+
+## 2026-08-20 · [guias] · Nova York PUBLICADA (10º guia de cidade) 🎉
+- **No ar:** https://aleapc.github.io/guia-novayork/ (repo `aleapc/guia-novayork`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-novayork).
+- Fork do guia-istambul. **108 locais** em 8 bairros/boroughs (Midtown, Lower
+  Manhattan, Village/SoHo/Chelsea, Central Park & Upper Manhattan, Harlem,
+  Brooklyn, Queens, Bronx) + **10 categorias temáticas** (iconicos, museus,
+  parques, teatro, mirantes, gastronomia, compras, vidanoturna, bairros,
+  hospedagem). **8 idiomas** (pt/de/en/ru/nl/fr/it/es). Info-local EUA/NY
+  (US$, metrô MTA/OMNY, JFK/LGA/EWR, 911, gorjeta 15-20%, imposto no caixa,
+  água potável). Cross-sell → **curso de inglês** (a criar → SEMEIA, a maior
+  alavanca; modelo Londres/Singapura). Verificado ao vivo em italiano
+  (Central Park renderiza traduzido).
+- **Escolhida pelo MAPA:** nº 1 em chegadas intl sem selo (8,9 M overseas).
+- **Selo no mapa + KPI 9→10** 🎉 (Málaga, Istambul, Paris, Londres, Roma,
+  Bangkok, Singapura, Antalya, Pattaya, Nova York — 10 guias no ar).
+- **Fila de fotos do Mac:** …guia-pattaya (108) → **guia-novayork (108)** — pedido nº 22.
+- **Volta ao modelo de bairros densos** (metrópole, não resort) — playbook flexiona
+  entre os dois modelos sem atrito. Conteúdo limpo de primeira de novo.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Las Vegas (4,74 M)**,
+  depois Edirne (4,7, Türkiye), Miami (4,4), Los Angeles (3,6).
