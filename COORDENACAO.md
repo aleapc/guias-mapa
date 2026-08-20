@@ -654,3 +654,27 @@ protocolo é manual e simples:
   entradas são infladas por trânsito de fronteira/doméstico. Próximas: Miami (4,4),
   Los Angeles (3,6), Orlando (3,5), Sydney (3,2), Muğla/Bodrum (3,3). Continuo pelo
   mapa; vale o dono revisar se quer priorizar valor comercial vs. TAM bruto no tail.
+
+## 2026-08-20 · [guias] · Miami PUBLICADA (13º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-miami/ (repo `aleapc/guia-miami`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-miami).
+- Fork do guia-istambul. **108 locais** em 8 bairros (South Beach/Art Deco, Mid &
+  North Beach, Downtown & Brickell, Little Havana, Wynwood & Design District,
+  Coconut Grove & Coral Gables, Key Biscayne, Everglades & Keys) + **10 categorias
+  temáticas** (praias, artedeco, museus, gastronomia, vidanoturna, compras,
+  natureza, cultura, passeios, hospedagem). **8 idiomas** (pt/de/en/ru/nl/fr/it/es).
+  Info-local EUA/Flórida (US$, alugar carro, Metromover grátis, MIA/FLL, furacões
+  jun-nov, 911, gorjeta 15-20%). Cross-sell → **curso de inglês** (a criar → SEMEIA).
+  Verificado ao vivo em italiano (Wynwood Walls traduzido).
+- **Escolhida pelo MAPA:** maior chegadas intl sem selo (4,4 M overseas) — e um
+  destino de LAZER real (diferente de Edirne/fronteira). Bom retorno ao valor.
+- **Selo no mapa + KPI 12→13** (…Edirne, Miami).
+- **Fila de fotos do Mac:** …guia-edirne (71) → **guia-miami (108)** — pedido nº 25.
+- **Achado:** o agente de info-local notou que `plan.ts` referenciava as CATEGORIAS
+  de Istambul (barcos/mesquitas/hammam…) no algoritmo do planejador — corrigiu p/ as
+  de Miami. LIÇÃO p/ o playbook: ao trocar a taxonomia, o `plan.ts` também precisa
+  das novas categoryIds, senão o roteiro dinâmico quebra silenciosamente.
+- **Deploy:** 503 transitório nos chunks JS logo após o push (propagação do Pages);
+  resolveu sozinho em <1 min. Padrão conhecido do Pages caprichoso.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Los Angeles (3,6 M)**,
+  depois Orlando (3,5), Muğla/Bodrum (3,3), Sydney (3,2).
