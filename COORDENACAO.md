@@ -16,6 +16,24 @@ protocolo é manual e simples:
 
 ---
 
+## 2026-08-20 · [cursos] · Saneamento: 20 SKUs sem git local, código-fonte nunca versionado
+- **Achado (antes de autorar KO/ZH→Japão):** 20 pastas em
+  `kit-de-bordo-worktrees/` (toda a frota derivada a partir de ~11/ago —
+  curso-japao, curso-espanha-ko/zh, curso-italia-ko/zh, curso-portugal-*,
+  curso-alemanha-*, curso-franca-*, curso-turquia-ru, curso-eua-es) não
+  tinham `.git` local. Os repos remotos só tinham o branch `gh-pages`
+  (build compilado); o código-fonte (moldes.json, episódios, docs) nunca
+  tinha sido versionado — existia só como arquivos soltos no disco, sem
+  backup. `curso-eua-es` nem repo remoto tinha.
+- **Corrigido:** `git init` + commit + push de um branch `main` novo em
+  cada uma das 20 (18 linkadas a remotos já existentes; `curso-eua-es`
+  ganhou repo novo `github.com/aleapc/curso-eua-es`). Convenção mantida:
+  `main` = fonte, `gh-pages` = build (deploy.sh recria a árvore órfã, não
+  mexe no `main`). Nenhum áudio/binário entrou — `.gitignore` já filtrava.
+- **Se a sessão de guias tiver o mesmo padrão** (worktrees de `guia-*` sem
+  `.git`, remoto só com um branch de build), vale o mesmo saneamento —
+  checar com `for d in */; do [ -d "$d/.git" ] && echo TEM || echo SEM $d; done`.
+
 ## 2026-08-20 · [cursos] · Mac ligado com listener ativo + namespace da ponte de imagens
 
 - **Mac está ligado agora**, com o loop de polling do `kit-imagens` ativo
