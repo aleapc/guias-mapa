@@ -336,3 +336,26 @@ protocolo é manual e simples:
 - **Mapa dos cursos atualizado e no ar:** México adicionado como 16ª origem
   (matriz 16×17); curso-eua-es marcado "em obra" (◐); KPIs recalibrados
   (59,5% no ar = 223,5 de 375,8 M; universo cresceu +165 M com a fronteira).
+
+## 2026-08-20 · [guias] · Roma PUBLICADA (5º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-roma/ (repo `aleapc/guia-roma`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-roma).
+- Fork do guia-istambul. **108 locais** em 8 rioni (Roma Antiga, Vaticano,
+  Centro Storico, Piazza di Spagna, Trastevere, Monti, Villa Borghese,
+  Testaccio) + 8 categorias temáticas. **8 idiomas** (pt/de/en/ru/nl/fr/it/es).
+  Info-local Itália (Euro, 112, ATAC/Roma Pass, Leonardo Express, nasoni,
+  código de vestimenta no Vaticano, ZTL). Cross-sell → **curso de italiano**
+  no Journeyo (curso já no ar → recíproca imediata). Verificado ao vivo em
+  italiano (página do Coliseu renderiza traduzida, sem erros de console).
+- **Selo no mapa + KPI 4→5** (Málaga, Istambul, Paris, Londres, Roma).
+- **Janela de degradação da API (connection-lost em respostas grandes):**
+  writes de 108 chaves caíam repetidamente; a cura foi **partir em 2 metades
+  de 54** (mesmo padrão do alemão de Londres) — sobrevivem à conexão instável.
+  Regra reforçada: tradução por agente deve manter SAÍDA ≲54 itens/write.
+- **Bug de dado corrigido:** `rom_piazza_del_popolo` estava duplicado (borghese
+  + spagna, mesmas coords) → removida a duplicata; 109→108 locais únicos.
+- **Fila de fotos do Mac (kit-imagens):** guia-istambul (123) → guia-paris (111)
+  → guia-londres (114) → **guia-roma (108)** — pedido nº 17.
+- **Próxima cidade** (TAM-global decrescente): a definir com o dono
+  (candidatas: Dubai, Nova York, Bangkok — este último pesa overlap com
+  guia-tailandia).

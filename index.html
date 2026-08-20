@@ -116,7 +116,7 @@ const PAISES = [
     {n:"Fethiye / Ölüdeniz", v:1.5, mt:"estimativa", c:"b"}, {n:"Marmaris", v:1.2, mt:"estimativa", c:"b"}, {n:"Ancara", v:1.0, mt:"estimativa", c:"b"}
   ]},
   { pais:"Itália", flag:"🇮🇹", status:"live", curso:"curso no ar", cnote:"Números são presenze (pernoites) da cidade, salvo indicação. Nápoles é 'visitatori' (inflado). Ícones difusos têm dado fraco.", dest:[
-    {n:"Roma", v:51.4, mt:"pernoites", c:"a"}, {n:"Nápoles", v:14.9, mt:"visitantes", c:"m", t:"observatório, incl. excursionistas"},
+    {n:"Roma", v:51.4, mt:"pernoites", c:"a", guia:true}, {n:"Nápoles", v:14.9, mt:"visitantes", c:"m", t:"observatório, incl. excursionistas"},
     {n:"Milão", v:14.1, mt:"pernoites", c:"a"}, {n:"Veneza", v:13.3, mt:"pernoites", c:"a"}, {n:"Florença", v:9.2, mt:"pernoites", c:"a"},
     {n:"Turim", v:4.45, mt:"pernoites", c:"a"}, {n:"Lago de Como", v:4.3, mt:"região", c:"m", t:"províncias, não a cidade"},
     {n:"Bologna", v:4.10, mt:"pernoites", c:"a"}, {n:"Pompeia", v:4.07, mt:"sítio", c:"a"},
@@ -234,7 +234,7 @@ document.getElementById("kpis").innerHTML = `
   <div class="kpi"><div class="n">${totalDest}</div><div class="l">destinos catalogados</div></div>
   <div class="kpi"><div class="n">${nLive}</div><div class="l">países com curso no ar</div></div>
   <div class="kpi"><div class="n">${nCriar}</div><div class="l">países com curso a criar (inclui inglês)</div></div>
-  <div class="kpi"><div class="n">4</div><div class="l">guias já no ar (Málaga, Istambul, Paris, Londres)</div></div>
+  <div class="kpi"><div class="n">5</div><div class="l">guias já no ar (Málaga, Istambul, Paris, Londres, Roma)</div></div>
 `;
 
 function renderCountry(p){
