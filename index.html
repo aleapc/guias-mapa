@@ -182,7 +182,7 @@ const PAISES = [
     {n:"Dublin", v:4.5, mt:"estimativa", c:"b", t:"âncora firme: 6,6 M em 2019"}, {n:"Cork", v:1.4, mt:"estimativa", c:"b"}, {n:"Galway", v:0.97, mt:"chegadas intl", c:"a"}
   ]},
   { pais:"Austrália", flag:"🇦🇺", status:"criar", curso:"curso a criar · inglês", cnote:"Tourism Australia (IVS) publica internacional limpo por cidade. Dados 2023-24.", dest:[
-    {n:"Sydney", v:3.2, mt:"chegadas intl", c:"a"}, {n:"Melbourne", v:1.91, mt:"chegadas intl", c:"a"}, {n:"Brisbane", v:1.2, mt:"chegadas intl", c:"a"},
+    {n:"Sydney", v:3.2, mt:"chegadas intl", c:"a", guia:true}, {n:"Melbourne", v:1.91, mt:"chegadas intl", c:"a"}, {n:"Brisbane", v:1.2, mt:"chegadas intl", c:"a"},
     {n:"Perth", v:0.8, mt:"estimativa", c:"b"}, {n:"Gold Coast", v:0.65, mt:"chegadas intl", c:"m"}, {n:"Cairns", v:0.54, mt:"chegadas intl", c:"m"}
   ]},
   { pais:"Canadá", flag:"🇨🇦", status:"criar", curso:"curso a criar · inglês (+ FR)", cnote:"Cidades canadenses publicam TOTAL com doméstico (internacional é fração). Montréal e Québec são FRANCÓFONAS → curso de francês, que já está no ar.", dest:[
@@ -234,7 +234,7 @@ document.getElementById("kpis").innerHTML = `
   <div class="kpi"><div class="n">${totalDest}</div><div class="l">destinos catalogados</div></div>
   <div class="kpi"><div class="n">${nLive}</div><div class="l">países com curso no ar</div></div>
   <div class="kpi"><div class="n">${nCriar}</div><div class="l">países com curso a criar (inclui inglês)</div></div>
-  <div class="kpi"><div class="n">16</div><div class="l">guias já no ar (Málaga, Istambul, Paris, Londres, Roma, Bangkok, Singapura, Antalya, Pattaya, Nova York, Las Vegas, Edirne, Miami, Los Angeles, Orlando, Bodrum/Costa Turquesa)</div></div>
+  <div class="kpi"><div class="n">17</div><div class="l">guias já no ar (Málaga, Istambul, Paris, Londres, Roma, Bangkok, Singapura, Antalya, Pattaya, Nova York, Las Vegas, Edirne, Miami, Los Angeles, Orlando, Bodrum/Costa Turquesa, Sydney)</div></div>
 `;
 
 function renderCountry(p){

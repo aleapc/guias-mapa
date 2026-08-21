@@ -758,3 +758,25 @@ protocolo é manual e simples:
 - **Fila de fotos do Mac:** …guia-orlando (108) → **guia-bodrum (107)** — pedido nº 28.
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Sydney (3,2 M)** —
   inglês-destino, primeiro guia do hemisfério sul/Oceania. Long-tail (TAM ~3 M).
+
+## 2026-08-21 · [guias] · Sydney PUBLICADA (17º guia de cidade — 1º do hemisfério sul)
+- **No ar:** https://aleapc.github.io/guia-sydney/ (repo `aleapc/guia-sydney`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-sydney).
+- Fork do guia-istambul. **108 locais** em 8 bairros (CBD/The Rocks/Circular Quay,
+  Darling Harbour & Barangaroo, Bondi & praias do leste, Manly & costa norte,
+  Inner West & Newtown, Paddington & Darlinghurst, Parques & jardins, arredores/
+  Blue Mountains & Hunter Valley) + 10 categorias temáticas. **8 idiomas**
+  (pt/de/en/ru/nl/fr/it/es). Info-local Austrália (A$, cartão Opal, aeroporto SYD,
+  000, dirige à ESQUERDA, sol/UV forte, sem gorjeta obrigatória). Cross-sell →
+  **curso de inglês** (a criar → SEMEIA). Verificado ao vivo em italiano (Opera
+  House traduzida).
+- **PRIMEIRO GUIA DO HEMISFÉRIO SUL / OCEANIA.** ATENÇÃO no `dates.ts`: estações
+  INVERTIDAS (verão dez-fev, inverno jun-ago) — feito e validado. Coordenadas todas
+  com lat NEGATIVA (checado). Conteúdo limpo de primeira.
+- **Escolhida pelo MAPA:** maior chegadas intl sem selo (3,2 M).
+- **Selo no mapa + KPI 16→17** (…Bodrum, Sydney).
+- **Fila de fotos do Mac:** …guia-bodrum (107) → **guia-sydney (108)** — pedido nº 29.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Muğla/Aydın (Kuşadası
+  4,2 M "visitantes")** ou **Sydney já feito → Melbourne (1,91 M)** — checar a
+  próxima maior SEM selo. Long-tail forte (TAM <3 M). Vale MUITO o dono revisar
+  aqui se continua o encadeamento ou muda de estratégia (ex.: fotos, cursos).
