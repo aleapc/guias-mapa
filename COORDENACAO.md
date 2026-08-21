@@ -868,3 +868,11 @@ protocolo é manual e simples:
   folhas que não existem em `taxonomia.ts`, em `curso-eua-es`+derivações, `curso-reinounido-fr`
   +derivações, `curso-japao-ko/zh`) continua aberto — é um bug DIFERENTE (ids faltando, não
   texto de rótulo errado) e mais trabalhoso de consertar. Ver [[kit-de-bordo-taxonomia-espanha-vazada]].
+
+### ✅ Retrofit das telas "Istambul" — EXECUTADO (2026-08-21)
+Corrigido e **redeployado nos 15 forks** (Paris…Sydney). Wave 1 (script): home h1+subtítulo,
+roteiro, acontece (genérico, sem clubes turcos), sync.ts. Wave 2 (5 agentes): `voos` com rota/
+visto reais por cidade — **EUA=visto B1/B2 (não ESTA), Reino Unido=ETA, Austrália=visto**.
+Verificado ao vivo: os 15 mostram o nome certo no h1. `app.html`/manifest já estavam OK.
+guia-istambul REAL segue "Istambul" (correto). Achado lateral: guia-londres tem 124 type-errors
+pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam build/deploy.
