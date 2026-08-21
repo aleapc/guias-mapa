@@ -697,3 +697,24 @@ protocolo é manual e simples:
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Orlando (3,5 M)**,
   depois Muğla/Bodrum (3,3), Sydney (3,2). LEMBRETE do long-tail (ver ledger 08-20):
   TAM caindo — vale o dono decidir sobre valor comercial vs. TAM bruto.
+
+## 2026-08-21 · [guias] · Orlando PUBLICADA (15º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-orlando/ (repo `aleapc/guia-orlando`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-orlando).
+- Fork do guia-istambul. **108 locais** em 8 áreas (Walt Disney World, Universal
+  Orlando, SeaWorld & Aquatica, International Drive, Downtown, Winter Park &
+  Garden, fontes/natureza, arredores/KSC) + 10 categorias temáticas. **8 idiomas**
+  (pt/de/en/ru/nl/fr/it/es). Info-local EUA/Flórida (US$, alugar carro, MCO/SFB,
+  apps dos parques, 911, gorjeta). Cross-sell → **curso de inglês** (a criar →
+  SEMEIA). Verificado ao vivo em italiano (Magic Kingdom traduzido).
+- **Escolhida pelo MAPA:** maior chegadas intl sem selo (3,5 M). Capital mundial
+  dos parques temáticos — destino de lazer/família muito forte (o "chegadas intl"
+  subestima; há enorme fluxo doméstico e brasileiro).
+- **Selo no mapa + KPI 14→15** (…Los Angeles, Orlando).
+- **Modelo:** cidade cujas ZONAS são os complexos de parque (Disney/Universal/
+  SeaWorld) + distritos + natureza. Disney levou 20 locais (4 parks + aquáticos +
+  Springs). Conteúdo limpo de primeira.
+- **Fila de fotos do Mac:** …guia-losangeles (109) → **guia-orlando (108)** — pedido nº 27.
+  OBS de arte: os prompts pedem NÃO retratar personagens de marca (Disney/HP/Marvel).
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Muğla/Bodrum (3,3 M,
+  Türkiye)**, depois Sydney (3,2). Long-tail (ver ledger 08-20): TAM <4 M.
