@@ -802,3 +802,33 @@ protocolo é manual e simples:
 - Não fechado / segue registrado à parte: o bug de taxonomia.ts (56 SKUs com fatos da Espanha
   vazados) e as pendências já listadas ontem (Brasil/Japão→EUA bloqueados por voz, `consulta.json`
   léxico ES, `consulta.json` genérico do México).
+
+---
+
+## [guias] Guia Melbourne no ar — 18º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-melbourne/ (repo `aleapc/guia-melbourne`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-melbourne).
+- **Escolha pelo mapa:** maior "chegadas intl" sem selo (Melbourne 1,91 M). 2ª cidade da
+  Austrália, top mundial de café/cultura/esporte. **2º guia do hemisfério sul** — estações
+  INVERTIDAS no `dates.ts` e lat<0 (regra já herdada de Sydney).
+- **107 locais** em 8 bairros (cbd, southbank, stkilda, fitzroy, carlton, richmond,
+  southyarra, arredores) + 10 categorias temáticas. **8 idiomas** (pt+de/en/ru/nl/fr/it/es),
+  todos 107. Info-local Austrália adaptado de Sydney (Myki + Free Tram Zone, aeroporto MEL/
+  SkyBus, "quatro estações num dia", visto australiano p/ brasileiros, dirige à esquerda).
+  Cross-sell → **curso de inglês** (a criar → SEMEIA).
+- **Selo no mapa:** Melbourne `guia:true`, KPI **17→18**.
+- **Fila de fotos do Mac:** …guia-sydney (108) → **guia-melbourne (107)** — pedido nº 30.
+
+### ⚠️ ACHADO (vale p/ a sessão inteira): telas utilitárias nunca localizadas nos 17 guias
+- Verifiquei AO VIVO: **guia-paris, guia-miami, guia-roma, guia-novayork e guia-sydney todos
+  mostram "Istambul" no `<h1>` da home** (o banner é a 1ª coisa que o usuário vê), embora o
+  `<title>` esteja certo. O mesmo vale p/ `roteiro`, `acontece` e `voos` (rota Brasil→IST,
+  clubes turcos etc.) e p/ o `short_name` do manifesto (nome do ícone PWA).
+- Causa: os agentes de conteúdo/tradução só tocam nos LOCAIS (`scripts/data`+i18n), nunca nos
+  `+page.svelte` das telas. O fork de Istambul carrega esses textos e eles passam batido.
+- **No guia-melbourne (18º) TUDO isso foi corrigido** (home, roteiro, acontece, voos, app.html,
+  manifest, sync.ts) — serve de referência do "certo".
+- **Pendente (decisão do dono):** retrofit + REDEPLOY dos 17 publicados. É mecânico p/ o nome,
+  mas `voos`/`acontece` exigem conteúdo real por destino (rota de voo, eventos/clubes locais),
+  não é só find/replace. Registrado em memória `guias-residuo-telas-istambul`.
