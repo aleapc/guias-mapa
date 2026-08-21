@@ -678,3 +678,22 @@ protocolo é manual e simples:
   resolveu sozinho em <1 min. Padrão conhecido do Pages caprichoso.
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Los Angeles (3,6 M)**,
   depois Orlando (3,5), Muğla/Bodrum (3,3), Sydney (3,2).
+
+## 2026-08-21 · [guias] · Los Angeles PUBLICADA (14º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-losangeles/ (repo `aleapc/guia-losangeles`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-losangeles).
+- Fork do guia-istambul. **109 locais** em 8 bairros (Hollywood, Downtown LA,
+  Santa Monica & Venice, Beverly Hills & WeHo, Griffith & Los Feliz, praias
+  Malibu/South Bay, Pasadena, estúdios & parques) + 10 categorias temáticas.
+  **8 idiomas** (pt/de/en/ru/nl/fr/it/es). Info-local EUA/Califórnia (US$, alugar
+  carro, LAX/BUR/LGB, 911, gorjeta 15-20%). Cross-sell → **curso de inglês**
+  (a criar → SEMEIA). Verificado ao vivo em italiano (Walk of Fame traduzida).
+- **Escolhida pelo MAPA:** maior chegadas intl sem selo (3,6 M). Destino de lazer
+  real (cinema/praias) — inglês-destino.
+- **Selo no mapa + KPI 13→14** (…Miami, Los Angeles).
+- **Fila de fotos do Mac:** …guia-miami (108) → **guia-losangeles (109)** — pedido nº 26.
+- **Pausa/retomada:** este guia foi construído ontem (2026-08-20) e finalizado hoje
+  (só faltava o NL, que caiu por erro de API e foi relançado). Publicação limpa.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Orlando (3,5 M)**,
+  depois Muğla/Bodrum (3,3), Sydney (3,2). LEMBRETE do long-tail (ver ledger 08-20):
+  TAM caindo — vale o dono decidir sobre valor comercial vs. TAM bruto.
