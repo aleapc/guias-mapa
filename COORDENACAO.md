@@ -737,3 +737,24 @@ protocolo é manual e simples:
   Detalhe completo em memória `kit-de-bordo-taxonomia-espanha-vazada`.
 - **Não fechado.** Fica como dívida catalog-wide grande (≈6 rótulos a genericizar × 56 SKUs a
   verificar), fora do escopo de hoje de manhã. Retomar quando houver uma sessão dedicada.
+
+## 2026-08-21 · [guias] · Bodrum / Costa Turquesa PUBLICADA (16º guia de cidade)
+- **No ar:** https://aleapc.github.io/guia-bodrum/ (repo `aleapc/guia-bodrum`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-bodrum).
+- Fork do guia-istambul. **107 locais** em 8 ÁREAS da Costa Turquesa/província de
+  Muğla (Bodrum, Península de Bodrum, Marmaris & İçmeler, Fethiye, Ölüdeniz,
+  Dalyan & İztuzu, Datça & Knidos, Göcek & cruzeiro azul) + 9 categorias temáticas
+  (praias, ruinas, passeios, natureza, gastronomia, noite, compras, bemestar,
+  hospedagem). **8 idiomas** (pt/de/en/ru/nl/fr/it/es). Info-local Turquia/Costa
+  Turquesa (lira ₺, 112, aeroportos Bodrum-Milas BJV/Dalaman DLM, dolmuş, "blue
+  cruise"/mavi yolculuk). Cross-sell → **curso de turco** (recíproca). Verificado
+  ao vivo em italiano (Castelo de Bodrum traduzido).
+- **Escolhida pelo MAPA:** maior chegadas intl sem selo (Muğla 3,3 M, província).
+  O selo foi na linha "Muğla (Bodrum/Fethiye)". Repo/produto chamado guia-bodrum
+  (nome-flagship) mas cobre a PROVÍNCIA inteira (Bodrum + Marmaris + Fethiye/
+  Ölüdeniz + Dalyan + Datça + Göcek) — legítima p/ o selo de Muğla.
+- **Selo no mapa + KPI 15→16** (…Orlando, Bodrum/Costa Turquesa).
+- **Reúso:** Turquia (como Antalya/Edirne) → info-local herdou os fatos do PAÍS.
+- **Fila de fotos do Mac:** …guia-orlando (108) → **guia-bodrum (107)** — pedido nº 28.
+- **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Sydney (3,2 M)** —
+  inglês-destino, primeiro guia do hemisfério sul/Oceania. Long-tail (TAM ~3 M).
