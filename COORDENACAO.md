@@ -718,3 +718,22 @@ protocolo é manual e simples:
   OBS de arte: os prompts pedem NÃO retratar personagens de marca (Disney/HP/Marvel).
 - **Próxima cidade** pelo mapa (chegadas intl, sem selo): **Muğla/Bodrum (3,3 M,
   Türkiye)**, depois Sydney (3,2). Long-tail (ver ledger 08-20): TAM <4 M.
+
+## 2026-08-21 · [cursos] · Fecha task pendente de consulta.json (sku hard-coded) + achado maior: taxonomia.ts com fatos da Espanha vazados em 56 SKUs
+- **Fechado (16 SKUs, script-only, sem regressão):** `build-consulta.mjs` parava de gravar
+  `sku: "EN → Espanha"` hard-coded e passa a ler de `moldes.json`. Aplicado e pushado nos 15 SKUs
+  da onda de ontem (eua-de/es/esp/fr/it/ko/zh, holanda-de, reinounido-de/es/fr/it/nl/zh,
+  japao-ko/zh) + limpeza de resíduo de clone junto: package-lock.json com nome errado
+  (curso-holanda-de) e manifest de áudio órfão do México (curso-reinounido-fr).
+- **ACHADO MAIOR, não corrigido — decisão do dono foi registrar e seguir o mapa:** ao tentar
+  regenerar `consulta.json` nos 15 SKUs, `curso-eua-es`(+5 derivações), `curso-reinounido-fr`(+5)
+  e `curso-japao-ko/zh` falharam com 17-74 tags de episódio referenciando folhas que não existem
+  em `taxonomia.ts` (provável cópia de tags de outro SKU tipo curso-franca-en na autoria Fase-2).
+  Investigando a causa, achei algo bem maior: `taxonomia.ts` (nível 2, os rótulos do modo
+  Consulta) ainda tem o texto LITERAL da Espanha em **56 SKUs de todo o catálogo** — "112 & the
+  hospital", "Card — and 'en euros'", "Parking & the ZBE camera" (câmera de Madrid), "Metro vs
+  cercanías vs Renfe", "Hoja de reclamaciones" — mesmo em SKUs já PUBLICADOS de outros destinos.
+  Nenhum portão pega isso porque o gerador só valida IDs de folha, não o conteúdo do rótulo.
+  Detalhe completo em memória `kit-de-bordo-taxonomia-espanha-vazada`.
+- **Não fechado.** Fica como dívida catalog-wide grande (≈6 rótulos a genericizar × 56 SKUs a
+  verificar), fora do escopo de hoje de manhã. Retomar quando houver uma sessão dedicada.
