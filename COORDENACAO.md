@@ -832,3 +832,39 @@ protocolo é manual e simples:
 - **Pendente (decisão do dono):** retrofit + REDEPLOY dos 17 publicados. É mecânico p/ o nome,
   mas `voos`/`acontece` exigem conteúdo real por destino (rota de voo, eventos/clubes locais),
   não é só find/replace. Registrado em memória `guias-residuo-telas-istambul`.
+
+## 2026-08-21 (tarde) · [cursos] · Taxonomia Espanha vazada — CORRIGIDO em 52 SKUs
+- **Fechado o achado da manhã.** Reescrevi os 10 rótulos do modo Consulta (`taxonomia.ts`)
+  que ainda tinham fato literal da Espanha, pra texto genérico sem fato de país:
+  - `Tú or usted, in one line` → `Formal or casual, in one line`
+  - `Tapa, ración or media` → `Small plate, full plate or half portion`
+  - `Card — and "en euros"` → `Card — and "in local currency"`
+  - `Parking & the ZBE camera` → `Parking & low-emission zone cameras`
+  - `Metro vs cercanías vs Renfe` → `Which train — metro, regional or intercity`
+  - `«No funciona»` → `"It's not working"`
+  - `Farmacia de guardia` → `The 24-hour pharmacy`
+  - `112 & the hospital` → `Emergency number & the hospital`
+  - `112` (folha apuro/112) → `Emergency number`
+  - `Hoja de reclamaciones` → `Filing a complaint`
+- **Escopo:** todo o catálogo MENOS a família `curso-espanha-*` (7 SKUs, onde esses são fatos
+  corretos — é o destino real). Aplicado em **52 SKUs**, commitado e pushado em cada um.
+- **Achado extra durante a correção:** 6 SKUs (`curso-franca-de/en/zh`, `curso-grecia-de`,
+  `curso-italia-de`, `curso-turquia-de`) já tinham uma tentativa PARCIAL de localização feita
+  em sessão anterior — rótulos em ALEMÃO carregando os MESMOS fatos da Espanha traduzidos
+  (`Parken & die ZBE-Kamera`, `112 & das Krankenhaus` etc.), e essa versão alemã tinha vazado
+  até pra `curso-franca-zh` (comprador chinês recebendo rótulo em alemão!) via clone. Corrigido
+  com o mesmo texto genérico em inglês, alinhando com a convenção do resto do catálogo (rotulo
+  sempre em inglês, independente do idioma do comprador).
+- **Achado à parte, não mexido:** `curso-mexico-en` estava numa branch local
+  `feature/mexico-en-consolidacao` em vez de `main` (rastreando `origin/main` mas sem branch
+  local `main` atualizada) — push normal falhava com "non-fast-forward" até eu usar
+  `git push origin HEAD:main` explicitamente. Não é urgente, mas registrar caso apareça de
+  novo: o worktree local tem uma branch `main` órfã desatualizada (`4b48229`) coexistindo com
+  a de trabalho.
+- **Validado:** rodei `npm run tom` em amostras (curso-eua-es, curso-franca-de) — sem
+  regressão, PASSA/mesmo estado de antes. Como só o texto do rótulo mudou (ids intactos),
+  não afeta nenhum portão que valida estrutura/id.
+- **Não fechado:** o problema PRIMÁRIO de coverage do G8 (17-74 tags de episódio referenciando
+  folhas que não existem em `taxonomia.ts`, em `curso-eua-es`+derivações, `curso-reinounido-fr`
+  +derivações, `curso-japao-ko/zh`) continua aberto — é um bug DIFERENTE (ids faltando, não
+  texto de rótulo errado) e mais trabalhoso de consertar. Ver [[kit-de-bordo-taxonomia-espanha-vazada]].
