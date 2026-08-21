@@ -780,3 +780,25 @@ protocolo é manual e simples:
   4,2 M "visitantes")** ou **Sydney já feito → Melbourne (1,91 M)** — checar a
   próxima maior SEM selo. Long-tail forte (TAM <3 M). Vale MUITO o dono revisar
   aqui se continua o encadeamento ou muda de estratégia (ex.: fotos, cursos).
+
+## 2026-08-21 · [cursos] · Onda Países Baixos fechada (3 SKUs: EN, FR, IT)
+- **3 SKUs novos, derivações puras de `curso-holanda-de`** (reusam 100% o áudio-alvo
+  neerlandês já gravado, só a camada de guia é nova): `curso-holanda-en` (combina EUA 2,22 M
+  + Reino Unido 1,95 M = 4,17 M, seguindo o padrão de curso-alemanha-en), `curso-holanda-fr`
+  (1,40 M), `curso-holanda-it` (0,70 M). **6,27 M endereçados**, Sonnet 5 Medium, 3 agentes em
+  paralelo, cada um autorando sozinho (sem delegar) e rodando os próprios portões.
+- **Termos canônicos usados** (batem com o resto do catálogo): EN "the frame", FR "la formule",
+  IT "lo stampo".
+- **Validado por mim de forma independente** (não só o autorreporte dos agentes): rodei
+  `esqueleto`, `casca`, `voz` e `tom` nos 3 manualmente. Todos fecham limpos exceto os mesmos
+  **19 erros G8** pré-existentes (dívida catalogada em `kit-de-bordo-taxonomia-espanha-vazada`,
+  confirmado byte-a-byte idêntico ao `curso-holanda-de` de origem — não é regressão de nenhuma
+  das 3 derivações).
+- **4 SKUs (3 novos wips + o de origem)** compartilham `STATUS: "wip"` no mapa agora:
+  Países Baixos|EUA, Países Baixos|Reino Unido, Países Baixos|França, Países Baixos|Itália
+  (todas `"criar"→"wip"`).
+- **Nada publicado ainda** (falta áudio ElevenLabs, que segue travado até reset de crédito) e
+  **nenhum pedido de imagem** (zero arte nova, reuso total).
+- Não fechado / segue registrado à parte: o bug de taxonomia.ts (56 SKUs com fatos da Espanha
+  vazados) e as pendências já listadas ontem (Brasil/Japão→EUA bloqueados por voz, `consulta.json`
+  léxico ES, `consulta.json` genérico do México).
