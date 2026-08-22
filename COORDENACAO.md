@@ -1024,3 +1024,19 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - Telas utilitárias localizadas desde o início (7º guia no novo padrão). Worktree `gbne`.
 - **NOTA long-tail:** daqui pra baixo o mapa está muito abaixo de 1,2 M em chegadas intl — vale
   o dono reavaliar se continua o encadeamento ou muda de estratégia (visto na memória do Edirne).
+
+---
+
+## [guias] Guia Havaí no ar — 26º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-havai/ (repo `aleapc/guia-havai`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-havai, worktree `ghi`).
+- **Escolha pelo mapa:** Seattle (2,3 M) PULADO por inflação de fronteira (73% Canadá, mesma
+  regra do San Francisco); maior chegadas intl limpa = Honolulu/Havaí (1 M).
+- **104 locais** em 8 ilhas/áreas (5 zonas de Oʻahu + Maui + Big Island + Kauai — modelo de
+  ilhas como Okinawa) + 10 categorias. 8 idiomas, todos 104. Info-local EUA mas Havaí-específico
+  (911, carro+TheBus+voos entre ilhas, **dirige à DIREITA**, visto EUA B1/B2, protetor reef-safe
+  por lei, segurança no mar, não tocar tartarugas/corais). Clima tropical. Cross-sell → inglês.
+- **Selo no mapa:** Honolulu/Havaí `guia:true`, KPI **25→26**.
+- **Fila de fotos do Mac:** …guia-brisbane (103) → **guia-havai (104)** — pedido nº 38.
+- Telas utilitárias localizadas desde o início (8º guia no novo padrão). Worktree `ghi`.
