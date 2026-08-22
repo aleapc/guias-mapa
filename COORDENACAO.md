@@ -977,3 +977,18 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - **Selo no mapa:** Izmir `guia:true`, KPI **21→22**.
 - **Fila de fotos do Mac:** …guia-okinawa (106) → **guia-izmir (103)** — pedido nº 34.
 - Telas utilitárias localizadas desde o início (4º guia no novo padrão). Worktree `gizm`.
+
+---
+
+## [guias] Guia Chicago no ar — 23º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-chicago/ (repo `aleapc/guia-chicago`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-chicago, worktree `gchi`).
+- **Escolha pelo mapa:** maior chegadas intl SEM selo (1,4 M). EUA, inglês-destino.
+- **105 locais** em 8 bairros (loop, magmile, rivernorth, lincolnpark, southloop, hydepark,
+  wickerpark, arredores) + 10 categorias (com **arquitetura** própria — berço do arranha-céu — e
+  **esporte**). 8 idiomas, todos 105. Info-local EUA do SF (911, CTA "L"/ônibus + Ventra + Metra,
+  ORD/MDW, imposto ~10,25%, visto B1/B2, inverno rigoroso com wind chill). Cross-sell → inglês.
+- **Selo no mapa:** Chicago `guia:true`, KPI **22→23**.
+- **Fila de fotos do Mac:** …guia-izmir (103) → **guia-chicago (105)** — pedido nº 35.
+- Telas utilitárias localizadas desde o início (5º guia no novo padrão). Worktree `gchi`.
