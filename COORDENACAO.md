@@ -1007,3 +1007,20 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - **Selo no mapa:** Manchester `guia:true`, KPI **23→24**.
 - **Fila de fotos do Mac:** …guia-chicago (105) → **guia-manchester (100)** — pedido nº 36.
 - Telas utilitárias localizadas desde o início (6º guia no novo padrão). Worktree `gman`.
+
+---
+
+## [guias] Guia Brisbane no ar — 25º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-brisbane/ (repo `aleapc/guia-brisbane`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-brisbane, worktree `gbne`).
+- **Escolha pelo mapa:** maior chegadas intl SEM selo (1,2 M). Austrália, inglês-destino.
+- **3º do HEMISFÉRIO SUL** (estações invertidas + lat<0), subtropical.
+- **103 locais** em 8 bairros (cbd, southbank, fortitude, westend, kangaroopoint, paddington,
+  mtcoottha, arredores) + 10 categorias. 8 idiomas, todos 103. Info-local AU do Sydney (000,
+  go card+CityCat/ferry — CityHopper GRÁTIS, BNE+Airtrain, visto AU subclasse 600). Cross-sell → inglês.
+- **Selo no mapa:** Brisbane `guia:true`, KPI **24→25**.
+- **Fila de fotos do Mac:** …guia-manchester (100) → **guia-brisbane (103)** — pedido nº 37.
+- Telas utilitárias localizadas desde o início (7º guia no novo padrão). Worktree `gbne`.
+- **NOTA long-tail:** daqui pra baixo o mapa está muito abaixo de 1,2 M em chegadas intl — vale
+  o dono reavaliar se continua o encadeamento ou muda de estratégia (visto na memória do Edirne).
