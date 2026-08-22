@@ -907,3 +907,21 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
   "moldura 3/36 (8%)" do relatório de `valida-tom` como "curso só 8% autorado" — é uma métrica
   de densidade, não de progresso de autoria (os 36 episódios sempre estiveram completos). Avisar
   isso explicitamente em prompts futuros que peçam pra rodar `tom`.
+
+---
+
+## [guias] Guia San Francisco no ar — 19º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-saofrancisco/ (repo `aleapc/guia-saofrancisco`,
+  `main`=fonte, `gh-pages`=build via `deploy.ps1`, BASE_PATH=/guia-saofrancisco).
+- **Escolha pelo mapa:** maior chegadas intl SEM selo e limpa (2,3 M). Seattle empatava em 2,3
+  mas está inflada (`inclui Canadá 73%` — tráfego de fronteira, como Edirne); SF ganhou.
+- **107 locais** em 8 bairros (downtown, wharf, goldengate, nobhill, mission, haight, soma,
+  arredores) + 10 categorias. **8 idiomas**, todos 107. Info-local EUA adaptado de LA (911,
+  Clipper/Muni/BART/cable car, SFO+BART, imposto ~8,6%, névoa "Karl"/microclimas, Ocean Beach
+  não é praia de banho, car break-ins). Hemisfério NORTE (estações normais). Cross-sell → inglês.
+- **Selo no mapa:** San Francisco `guia:true`, KPI **18→19**.
+- **Fila de fotos do Mac:** …guia-melbourne (107) → **guia-saofrancisco (107)** — pedido nº 31.
+- **NOVO PADRÃO:** primeiro guia com as telas utilitárias (home/roteiro/acontece/voos/sync/
+  manifest/app.html) localizadas DESDE O INÍCIO — não repetiu o resíduo "Istambul". Fica no
+  playbook de fork daqui pra frente.
