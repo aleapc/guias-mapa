@@ -876,3 +876,34 @@ visto reais por cidade — **EUA=visto B1/B2 (não ESTA), Reino Unido=ETA, Austr
 Verificado ao vivo: os 15 mostram o nome certo no h1. `app.html`/manifest já estavam OK.
 guia-istambul REAL segue "Istambul" (correto). Achado lateral: guia-londres tem 124 type-errors
 pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam build/deploy.
+
+## 2026-08-21 (tarde) · [cursos] · Bug de ids de folha faltando — CORRIGIDO em 16 SKUs (3 famílias)
+- **O outro achado da manhã, agora fechado.** `build-consulta.mjs` falhava de verdade (não só
+  rótulo errado) em 3 SKUs-base + suas derivações: 3 agentes Sonnet em paralelo, cada um
+  reconciliando o SKU-base e propagando pros irmãos (mesmos audioKey/episódios-alvo).
+  - **curso-eua-es** (+6: de/esp/fr/it/ko/zh) — 15 ids inexistentes, 10 remapeados pra folha já
+    existente, 5 novas criadas (chegar/servicos, banheiro, bagagem, embarque; compras/probador).
+  - **curso-reinounido-fr** (+5: de/es/it/nl/zh) — 12 ids inexistentes, 10 remapeados, 2 novas
+    (compras/probador, saude/farmacia).
+  - **curso-japao** (+2: ko/zh) — 24 ids inexistentes (esquema próprio cidade/comer/conversa que
+    nunca existiu como tile — tiles são fixos pra sempre, então tudo foi remapeado pra tile
+    existente), 20 remapeados, 4 novos (chegar/lugar, compras/mercado, compras/presente,
+    saude/medico).
+  - **16 repos** commitados e pushados, `build-consulta.mjs` fecha com ZERO erro em todos.
+- **Achado extra sério na eua-es**: o `consulta.json` COMMITADO em todos os 7 repos da família
+  era literalmente resíduo do SKU de origem — `sku: "EN → Espanha"`, 220 cards que nunca eram
+  do curso-eua-*. O modo Consulta em produção mostraria conteúdo espanhol pro turista nos EUA.
+  Regenerado corretamente: 65 cards reais (B06-B18, aeroporto/restaurante/compras/hotel).
+- **Achado maior, AINDA ABERTO** (fora do escopo desta correção, que era só ids quebrados): ao
+  regenerar `consulta.json` de verdade pela primeira vez em muito tempo, ficou exposto que boa
+  parte dos episódios A01-A08/B01-B09 (e outros) nunca teve nenhum step marcado com `consulta:`
+  — então dezenas de folhas ficam sem NENHUM card (G8), em `curso-eua-es`+derivações,
+  `curso-reinounido-fr`+derivações e `curso-japao`+derivações. Isso é autoria de conteúdo real
+  (decidir que troca de cada episódio vira card), não reconciliação de taxonomia — não atacado
+  agora. Achado técnico junto: `consulta.json` não é regenerado automaticamente no prebuild, só
+  via `npm run consulta` manual — é o que permitiu esse desalinhamento (e o resíduo de Espanha)
+  ficarem invisíveis por tanto tempo. Vale considerar automatizar essa regeneração no prebuild.
+- **Nota pra mim mesmo / futuras sessões:** dois agentes diferentes leram errado a linha
+  "moldura 3/36 (8%)" do relatório de `valida-tom` como "curso só 8% autorado" — é uma métrica
+  de densidade, não de progresso de autoria (os 36 episódios sempre estiveram completos). Avisar
+  isso explicitamente em prompts futuros que peçam pra rodar `tom`.
