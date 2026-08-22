@@ -1073,3 +1073,22 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
   Cross-sell → inglês (semeia). Telas utilitárias localizadas desde o início (10º guia no padrão novo).
 - **Selo no mapa:** Galway `guia:true`, KPI **27→28**.
 - **Fila de fotos do Mac:** …guia-washington (103) → **guia-galway (105)** — pedido nº 40.
+
+---
+
+## [guias] Guia Boston no ar — 29º guia (2026-08-22)
+
+- **No ar:** https://aleapc.github.io/guia-boston/ (repo `aleapc/guia-boston`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-boston, worktree `gbos`).
+- **Escolha pelo mapa:** maior chegadas intl LIMPA sem selo (0,9 M) depois de Galway. EUA,
+  inglês-destino. **Long-tail já <1 M** — a seguir só Glasgow 0,69, Gold Coast 0,65,
+  Cairns 0,54, Oxford 0,45 (todos estimativa/pequenos). Vale o dono revisar a estratégia.
+- **105 locais** em 8 bairros (Downtown/Freedom Trail, Beacon Hill/Back Bay, North End/
+  Waterfront, Seaport, Fenway, Cambridge/Harvard+MIT, Charlestown/porto, arredores=Salem/
+  Lexington/Concord/Plymouth/Cape Cod). Categorias próprias **história & Revolução**,
+  **universidades** (Harvard/MIT) e **esporte** (Fenway/Red Sox). 8 idiomas, todos 105.
+  Info-local EUA-Boston (911, **MBTA "the T" + CharlieCard**, Logan/BOS Silver Line grátis,
+  visto B1/B2, **Consulado do Brasil na própria Boston**, roupas <US$175 isentas de imposto).
+  Cross-sell → inglês (semeia). Telas utilitárias localizadas (11º guia no padrão novo).
+- **Selo no mapa:** Boston `guia:true`, KPI **28→29**.
+- **Fila de fotos do Mac:** …guia-galway (105) → **guia-boston (105)** — pedido nº 41.
