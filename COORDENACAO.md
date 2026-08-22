@@ -960,3 +960,20 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - **Selo no mapa:** Okinawa `guia:true`, KPI **20→21**.
 - **Fila de fotos do Mac:** …guia-edimburgo (105) → **guia-okinawa (106)** — pedido nº 33.
 - Telas utilitárias localizadas desde o início (3º guia no novo padrão). Worktree `goki`.
+
+---
+
+## [guias] Guia Izmir no ar — 22º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-izmir/ (repo `aleapc/guia-izmir`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-izmir, worktree `gizm`).
+- **Escolha pelo mapa:** maior chegadas intl SEM selo (2,0 M). Turquia, costa do Egeu.
+- **103 locais** em 8 áreas (modelo região: konak, alsancak, karsiyaka, cesme, efeso,
+  kusadasi, pergamo, arredores) + 10 categorias (com **ruinas** própria — Éfeso/Pérgamo).
+  8 idiomas, todos 103. Info-local Türkiye do Bodrum (112, İZBAN/tram/balsa+İzmirimkart,
+  aeroporto ADB via İZBAN, sem visto p/ br, meltemi, Kemeraltı). Clima mediterrâneo.
+- **Cross-sell → turco** (curso-turquia-en/de/ru JÁ no ar → recíproco; CrossSell do fork
+  mantido, NÃO resetado — regra: guia de país com curso no ar não reseta o cross-sell).
+- **Selo no mapa:** Izmir `guia:true`, KPI **21→22**.
+- **Fila de fotos do Mac:** …guia-okinawa (106) → **guia-izmir (103)** — pedido nº 34.
+- Telas utilitárias localizadas desde o início (4º guia no novo padrão). Worktree `gizm`.
