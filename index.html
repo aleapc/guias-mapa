@@ -146,7 +146,7 @@ const PAISES = [
     {n:"Tóquio", v:17.7, mt:"estimativa", c:"m", t:"taxa ~48% × nacional"}, {n:"Osaka", v:15.9, mt:"estimativa", c:"m"}, {n:"Kyoto", v:11.0, mt:"estimativa", c:"m"},
     {n:"Fukuoka", v:4.8, mt:"estimativa", c:"m"}, {n:"Hakone / Kanagawa", v:3.7, mt:"estimativa", c:"b"}, {n:"Nagoya", v:3.0, mt:"estimativa", c:"b"},
     {n:"Nara", v:3.0, mt:"estimativa", c:"b", t:"bate-volta"}, {n:"Sapporo / Hokkaido", v:2.7, mt:"hóspedes", c:"m"},
-    {n:"Monte Fuji", v:2.6, mt:"estimativa", c:"b"}, {n:"Okinawa", v:2.1, mt:"chegadas intl", c:"m"}, {n:"Hiroshima", v:1.7, mt:"hóspedes", c:"b"},
+    {n:"Monte Fuji", v:2.6, mt:"estimativa", c:"b"}, {n:"Okinawa", v:2.1, mt:"chegadas intl", c:"m", guia:true}, {n:"Hiroshima", v:1.7, mt:"hóspedes", c:"b"},
     {n:"Takayama", v:1.1, mt:"estimativa", c:"b"}, {n:"Kanazawa", v:0.9, mt:"estimativa", c:"b"}, {n:"Nikko", v:0.7, mt:"estimativa", c:"b"}
   ]},
   { pais:"Grécia", flag:"🇬🇷", status:"live", curso:"curso no ar", cnote:"Quase tudo é PAX de aeroporto (~2× chegadas). Ilhas ~100% internacionais; Atenas/Thessaloniki têm doméstico. Naxos/Paros chegam por ferry (subcontado).", dest:[
@@ -234,7 +234,7 @@ document.getElementById("kpis").innerHTML = `
   <div class="kpi"><div class="n">${totalDest}</div><div class="l">destinos catalogados</div></div>
   <div class="kpi"><div class="n">${nLive}</div><div class="l">países com curso no ar</div></div>
   <div class="kpi"><div class="n">${nCriar}</div><div class="l">países com curso a criar (inclui inglês)</div></div>
-  <div class="kpi"><div class="n">20</div><div class="l">guias já no ar (Málaga, Istambul, Paris, Londres, Roma, Bangkok, Singapura, Antalya, Pattaya, Nova York, Las Vegas, Edirne, Miami, Los Angeles, Orlando, Bodrum/Costa Turquesa, Sydney, Melbourne, San Francisco, Edimburgo)</div></div>
+  <div class="kpi"><div class="n">21</div><div class="l">guias já no ar (Málaga, Istambul, Paris, Londres, Roma, Bangkok, Singapura, Antalya, Pattaya, Nova York, Las Vegas, Edirne, Miami, Los Angeles, Orlando, Bodrum/Costa Turquesa, Sydney, Melbourne, San Francisco, Edimburgo, Okinawa)</div></div>
 `;
 
 function renderCountry(p){
