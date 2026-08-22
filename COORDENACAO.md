@@ -1040,3 +1040,18 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - **Selo no mapa:** Honolulu/Havaí `guia:true`, KPI **25→26**.
 - **Fila de fotos do Mac:** …guia-brisbane (103) → **guia-havai (104)** — pedido nº 38.
 - Telas utilitárias localizadas desde o início (8º guia no novo padrão). Worktree `ghi`.
+
+---
+
+## [guias] Guia Washington DC no ar — 27º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-washington/ (repo `aleapc/guia-washington`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-washington, worktree `gdc`).
+- **Escolha pelo mapa:** maior chegadas intl limpa sem selo (1,0 M). EUA, capital, inglês-destino.
+- **103 locais** em 8 bairros (mall, smithsonian, downtown, capitolhill, georgetown, dupont,
+  wharf, arredores) + 10 categorias (com **monumentos** e **museus** — Smithsonian grátis —
+  próprias). 8 idiomas, todos 103. Info-local EUA do Chicago (911, Metrorail+SmarTrip,
+  IAD/DCA/BWI, Mall andável, visto B1/B2, embaixada BR na própria DC). Cross-sell → inglês.
+- **Selo no mapa:** Washington DC `guia:true`, KPI **26→27**.
+- **Fila de fotos do Mac:** …guia-havai (104) → **guia-washington (103)** — pedido nº 39.
+- Telas utilitárias localizadas desde o início (9º guia no novo padrão). Worktree `gdc`.
