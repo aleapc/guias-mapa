@@ -925,3 +925,20 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - **NOVO PADRÃO:** primeiro guia com as telas utilitárias (home/roteiro/acontece/voos/sync/
   manifest/app.html) localizadas DESDE O INÍCIO — não repetiu o resíduo "Istambul". Fica no
   playbook de fork daqui pra frente.
+
+---
+
+## [guias] Guia Edimburgo no ar — 20º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-edimburgo/ (repo `aleapc/guia-edimburgo`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-edimburgo, worktree `gedi`).
+- **Escolha pelo mapa:** maior chegadas intl SEM selo (2,3 M). Empatava com Seattle (inflada,
+  73% fronteira) e San Francisco (já feito no 19º) — Edimburgo levou.
+- **105 locais** em 8 bairros + 10 categorias (com **pubs/whisky** como categoria própria).
+  8 idiomas, todos 105. Info-local UK adaptado de Londres (Police Scotland, Lothian Buses/tram,
+  SEM metrô/Oyster, EDI+tram/Airlink, **ETA do Reino Unido obrigatória**, tempo mutável,
+  festivais de agosto). Hemisfério NORTE. Cross-sell → inglês.
+- **Selo no mapa:** Edimburgo `guia:true`, KPI **19→20**.
+- **Fila de fotos do Mac:** …guia-saofrancisco (107) → **guia-edimburgo (105)** — pedido nº 32.
+- Telas utilitárias localizadas desde o início (padrão novo, 2º guia após SF). Worktree `gedi`
+  escolhido para não colidir com o `ged` do guia-edirne.
