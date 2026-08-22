@@ -1055,3 +1055,21 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - **Selo no mapa:** Washington DC `guia:true`, KPI **26→27**.
 - **Fila de fotos do Mac:** …guia-havai (104) → **guia-washington (103)** — pedido nº 39.
 - Telas utilitárias localizadas desde o início (9º guia no novo padrão). Worktree `gdc`.
+
+---
+
+## [guias] Guia Galway no ar — 28º guia (2026-08-22)
+
+- **No ar:** https://aleapc.github.io/guia-galway/ (repo `aleapc/guia-galway`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-galway, worktree `ggal`).
+- **Escolha pelo mapa:** maior chegadas intl LIMPA sem selo (0,97 M, `c:"a"`). Irlanda,
+  inglês-destino. Seattle (2,3) e Belfast (1,7) pulados por inflação de fronteira; Boston
+  (0,9) vem logo atrás. **Long-tail profundo** — daqui pra baixo tudo <1 M (Boston 0,9,
+  Glasgow 0,69, Gold Coast 0,65, Cairns 0,54, Oxford 0,45); vale o dono revisar a estratégia.
+- **105 locais** em 8 regiões (modelo região Galway + Wild Atlantic Way): cidade, baía/Salthill,
+  Connemara, Ilhas Aran, Falésias de Moher/Doolin, The Burren, Lough Corrib/Cong, leste & bate-voltas.
+  Categorias próprias **pubs & música tradicional** e **paisagens & falésias**. 8 idiomas, todos 105.
+  Info-local Irlanda (112/999, euro, SEM visto p/ br, dirige à ESQUERDA, Shannon/Dublin, balsas Aran).
+  Cross-sell → inglês (semeia). Telas utilitárias localizadas desde o início (10º guia no padrão novo).
+- **Selo no mapa:** Galway `guia:true`, KPI **27→28**.
+- **Fila de fotos do Mac:** …guia-washington (103) → **guia-galway (105)** — pedido nº 40.
