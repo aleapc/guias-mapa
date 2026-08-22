@@ -942,3 +942,21 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - **Fila de fotos do Mac:** …guia-saofrancisco (107) → **guia-edimburgo (105)** — pedido nº 32.
 - Telas utilitárias localizadas desde o início (padrão novo, 2º guia após SF). Worktree `gedi`
   escolhido para não colidir com o `ged` do guia-edirne.
+
+---
+
+## [guias] Guia Okinawa no ar — 21º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-okinawa/ (repo `aleapc/guia-okinawa`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-okinawa, worktree `goki`).
+- **Escolha pelo mapa:** maior chegadas intl SEM selo (2,1 M). Japão — 1º guia de destino japonês.
+- **106 locais** em 8 áreas/ilhas (modelo de zonas geográficas, como Antalya/Bodrum) + 10
+  categorias de destino-ilha (praias, mergulho, natureza, cultura Ryukyu, gastronomia, iconicos,
+  familia, compras, vidanoturna, hospedagem). 8 idiomas, todos 106. Info-local Japão escrito do
+  ZERO (110/119, ¥ + ATM 7-Eleven, carro+PID essencial, dirige à esquerda, SEM gorjeta, tufões
+  ago-out, água-viva habu-kurage, bases dos EUA). Clima subtropical.
+- **Cross-sell → curso de JAPONÊS** (nova língua de cross-sell; a criar → semeia; casa com a
+  frente Japão em andamento).
+- **Selo no mapa:** Okinawa `guia:true`, KPI **20→21**.
+- **Fila de fotos do Mac:** …guia-edimburgo (105) → **guia-okinawa (106)** — pedido nº 33.
+- Telas utilitárias localizadas desde o início (3º guia no novo padrão). Worktree `goki`.
