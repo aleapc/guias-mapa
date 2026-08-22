@@ -992,3 +992,18 @@ pré-existentes em contentExtra.ts (null em traduções) — não bloqueiam buil
 - **Selo no mapa:** Chicago `guia:true`, KPI **22→23**.
 - **Fila de fotos do Mac:** …guia-izmir (103) → **guia-chicago (105)** — pedido nº 35.
 - Telas utilitárias localizadas desde o início (5º guia no novo padrão). Worktree `gchi`.
+
+---
+
+## [guias] Guia Manchester no ar — 24º guia (2026-08-21)
+
+- **No ar:** https://aleapc.github.io/guia-manchester/ (repo `aleapc/guia-manchester`,
+  `main`=fonte, `gh-pages` via `deploy.ps1`, BASE_PATH=/guia-manchester, worktree `gman`).
+- **Escolha pelo mapa:** maior chegadas intl SEM selo (1,3 M). UK, inglês-destino.
+- **100 locais** em 8 bairros (citycentre, northernquarter, castlefield, spinningfields,
+  salford, oxfordroad, ancoats, arredores) + 10 categorias (com **futebol** — United/City — e
+  **música** — Oasis/Haçienda — próprias). 8 idiomas, todos 100. Info-local UK do Edimburgo
+  (999/111, Metrolink/Bee Network, MAN, ETA UK obrigatória). Cross-sell → inglês.
+- **Selo no mapa:** Manchester `guia:true`, KPI **23→24**.
+- **Fila de fotos do Mac:** …guia-chicago (105) → **guia-manchester (100)** — pedido nº 36.
+- Telas utilitárias localizadas desde o início (6º guia no novo padrão). Worktree `gman`.
